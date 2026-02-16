@@ -7,6 +7,7 @@ export default function PageMetadata() {
     const { language } = useLanguage();
 
     useEffect(() => {
+        document.documentElement.lang = language;
         document.title = content[language].title;
         const descriptionMeta = document.querySelector('meta[name="description"]');
         if (descriptionMeta) {
