@@ -1,3 +1,4 @@
+'use client';
 import Header from '@/components/landing/header';
 import Hero from '@/components/landing/hero';
 import About from '@/components/landing/about';
@@ -6,6 +7,7 @@ import Skills from '@/components/landing/skills';
 import Contact from '@/components/landing/contact';
 import Footer from '@/components/landing/footer';
 import PageMetadata from '@/components/page-metadata';
+import Chatbot from '@/components/chatbot/chatbot';
 
 export default function Home() {
   return (
@@ -20,6 +22,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <Chatbot />
     </div>
   );
 }
