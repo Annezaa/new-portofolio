@@ -10,12 +10,12 @@ export default function Hero() {
     <section className="relative w-full">
       <div className="absolute inset-0 -z-20">
         <div className="absolute top-0 -left-64 h-[28rem] w-[28rem] rounded-full bg-primary/10 opacity-50 blur-3xl" />
-        <div className="absolute bottom-0 -right-64 h-[28rem] w-[28rem] rounded-full bg-blue-300/10 opacity-50 blur-3xl" />
+        <div className="absolute bottom-0 -right-64 h-[28rem] w-[28rem] rounded-full bg-primary/5 opacity-50 blur-3xl" />
       </div>
        <div className="container mx-auto grid min-h-[calc(100vh-5rem)] items-center gap-12 px-4 py-16 md:grid-cols-2 md:py-24 md:px-6">
         <div className="space-y-6 text-center md:text-left">
           <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-            Halo, saya Annisa Ramadhona 👋
+            Halo, saya Annisa Ramadhona
           </h1>
           <p className="text-lg text-foreground/80 md:text-xl">
             Mathematics Educator | SEA Teacher | Academic Writer | Education Innovator

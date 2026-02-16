@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
 
 const navLinks = [
   { name: 'Tentang Saya', href: '#tentang-saya' },
@@ -30,35 +31,45 @@ export default function Header() {
         <Link href="/" className="text-2xl font-semibold tracking-tight">
           Annisa Ramadhona
         </Link>
-        <nav className="hidden items-center gap-8 md:flex">
-          {navLinks.map((link) => (
-            <Link key={link.name} href={link.href} className="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground">
-              {link.name}
-            </Link>
-          ))}
-        </nav>
-        <Sheet open={isOpen} onOpenChange={setIsOpen}>
-          <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="md:hidden">
-              <Menu className="h-6 w-6" />
-              <span className="sr-only">Toggle navigation menu</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="right">
-            <div className="flex flex-col gap-6 p-6">
-              <Link href="/" className="text-2xl font-semibold tracking-tight" onClick={() => setIsOpen(false)}>
-                Annisa Ramadhona
-              </Link>
-              <nav className="flex flex-col gap-4">
-                {navLinks.map((link) => (
-                  <Link key={link.name} href={link.href} className="text-lg font-medium" onClick={() => setIsOpen(false)}>
-                    {link.name}
+        
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center gap-6">
+            <nav className="items-center gap-8 flex">
+              {navLinks.map((link) => (
+                <Link key={link.name} href={link.href} className="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground">
+                  {link.name}
+                </Link>
+              ))}
+            </nav>
+            <ThemeToggle />
+        </div>
+
+        {/* Mobile Navigation */}
+        <div className="flex items-center gap-2 md:hidden">
+            <ThemeToggle />
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Toggle navigation menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right">
+                <div className="flex flex-col gap-6 p-6">
+                  <Link href="/" className="text-2xl font-semibold tracking-tight" onClick={() => setIsOpen(false)}>
+                    Annisa Ramadhona
                   </Link>
-                ))}
-              </nav>
-            </div>
-          </SheetContent>
-        </Sheet>
+                  <nav className="flex flex-col gap-4">
+                    {navLinks.map((link) => (
+                      <Link key={link.name} href={link.href} className="text-lg font-medium" onClick={() => setIsOpen(false)}>
+                        {link.name}
+                      </Link>
+                    ))}
+                  </nav>
+                </div>
+              </SheetContent>
+            </Sheet>
+        </div>
       </div>
     </header>
   );

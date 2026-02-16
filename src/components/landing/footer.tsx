@@ -11,12 +11,12 @@ export default function Footer() {
         </p>
         <div className="flex gap-1">
           <Button asChild variant="ghost" size="icon">
-            <Link href="https://linkedin.com/in/annisaramadhona" target="_blank" aria-label="LinkedIn">
+            <Link href="https://www.linkedin.com/in/annisa-ramadhona/" target="_blank" aria-label="LinkedIn">
               <Linkedin className="h-5 w-5 text-foreground/80 hover:text-primary" />
             </Link>
           </Button>
           <Button asChild variant="ghost" size="icon">
-            <Link href="https://instagram.com/annisaramadhona" target="_blank" aria-label="Instagram">
+            <Link href="https://instagram.com/sastudyyy" target="_blank" aria-label="Instagram">
               <Instagram className="h-5 w-5 text-foreground/80 hover:text-primary" />
             </Link>
           </Button>

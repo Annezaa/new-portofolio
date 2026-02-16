@@ -33,17 +33,17 @@ export default function Contact() {
           <div className="flex flex-col justify-center space-y-6 rounded-2xl bg-secondary p-8 lg:p-12">
              <h3 className="text-2xl font-semibold">Connect with Me</h3>
               <div className="space-y-4">
-                 <a href="mailto:annisaramadhona@email.com" className="flex items-center gap-4 group text-lg">
+                 <a href="mailto:annisa031104@gmail.com" className="flex items-center gap-4 group text-lg">
                     <Mail className="h-7 w-7 text-primary" />
-                    <span className="group-hover:underline">annisaramadhona@email.com</span>
+                    <span className="group-hover:underline">annisa031104@gmail.com</span>
                  </a>
-                 <a href="https://linkedin.com/in/annisaramadhona" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group text-lg">
+                 <a href="https://www.linkedin.com/in/annisa-ramadhona/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group text-lg">
                     <Linkedin className="h-7 w-7 text-primary" />
-                    <span className="group-hover:underline">linkedin.com/in/annisaramadhona</span>
+                    <span className="group-hover:underline">linkedin.com/in/annisa-ramadhona</span>
                  </a>
-                 <a href="https://instagram.com/annisaramadhona" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group text-lg">
+                 <a href="https://instagram.com/sastudyyy" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group text-lg">
                     <Instagram className="h-7 w-7 text-primary" />
-                    <span className="group-hover:underline">@annisaramadhona</span>
+                    <span className="group-hover:underline">@sastudyyy</span>
                  </a>
               </div>
           </div>
