@@ -77,6 +77,23 @@ export const content = {
       connectTitle: 'Terhubung dengan Saya',
       emailAddress: 'annisa031104@gmail.com',
       linkedinDisplay: 'linkedin.com/in/annisa-ramadhona',
+      form: {
+        name: 'Nama',
+        email: 'Email',
+        message: 'Pesan',
+        namePlaceholder: 'Nama lengkap Anda',
+        emailPlaceholder: 'Alamat email Anda',
+        messagePlaceholder: 'Tulis pesan Anda di sini...',
+        successTitle: 'Pesan Terkirim!',
+        successDescription: 'Terima kasih telah menghubungi saya. Saya akan segera merespons.',
+        errorTitle: 'Oops! Terjadi kesalahan.',
+        errorDescription: 'Tidak dapat mengirim pesan. Silakan coba lagi nanti.',
+        validation: {
+          nameMin: 'Nama minimal 2 karakter.',
+          invalidEmail: 'Alamat email tidak valid.',
+          messageMin: 'Pesan minimal 10 karakter.',
+        },
+      }
     },
     footer: {
       copyright: '© 2026 Annisa Ramadhona. All rights reserved.',
@@ -158,11 +175,28 @@ export const content = {
     contact: {
       title: 'Let\'s Collaborate',
       subtitle: 'I am open to collaborations, educational projects, and innovative ideas that make a real impact. Let\'s build something meaningful together.',
-      button: 'Send a Message',
+      button: 'Send Message',
       email: 'mailto:annisa031104@gmail.com',
       connectTitle: 'Connect with Me',
       emailAddress: 'annisa031104@gmail.com',
       linkedinDisplay: 'linkedin.com/in/annisa-ramadhona',
+      form: {
+        name: 'Name',
+        email: 'Email',
+        message: 'Message',
+        namePlaceholder: 'Your full name',
+        emailPlaceholder: 'Your email address',
+        messagePlaceholder: 'Write your message here...',
+        successTitle: 'Message Sent!',
+        successDescription: 'Thank you for reaching out. I will get back to you shortly.',
+        errorTitle: 'Oops! Something went wrong.',
+        errorDescription: 'Could not send the message. Please try again later.',
+        validation: {
+            nameMin: 'Name must be at least 2 characters.',
+            invalidEmail: 'Invalid email address.',
+            messageMin: 'Message must be at least 10 characters.',
+        },
+      }
     },
     footer: {
       copyright: '© 2026 Annisa Ramadhona. All rights reserved.',
