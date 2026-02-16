@@ -61,86 +61,82 @@ export default function Contact() {
 
   return (
     <section id="kontak" className="relative w-full overflow-hidden py-20 md:py-32">
-       <div
-        className="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,hsl(var(--secondary))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--secondary))_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-30 dark:bg-[linear-gradient(to_right,hsl(var(--primary)/0.05)_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--primary)/0.05)_1px,transparent_1px)]"
-        style={{
-          maskImage: 'radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)',
-        }}
-       ></div>
       <div className="container mx-auto px-4 md:px-6">
-        <div className="mx-auto max-w-3xl text-center">
-          <TitleTypingAnimation text={contactContent.title} className="font-serif text-4xl font-bold tracking-tight text-foreground sm:text-5xl" />
-          <p className="mt-6 text-lg leading-8 text-foreground/80">
-            {contactContent.subtitle}
-          </p>
-        </div>
+        <div className="mx-auto max-w-4xl p-8 md:p-12 bg-gradient-to-br from-primary/10 to-primary/20 rounded-2xl shadow-2xl shadow-primary/10">
+          <div className="mx-auto max-w-3xl text-center">
+            <TitleTypingAnimation text={contactContent.title} className="font-serif text-4xl font-bold tracking-tight text-foreground sm:text-5xl" />
+            <p className="mt-6 text-lg leading-8 text-foreground/80">
+              {contactContent.subtitle}
+            </p>
+          </div>
 
-        <div className="mx-auto mt-16 max-w-xl">
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="text-foreground">{contactContent.form.name}</FormLabel>
-                    <FormControl>
-                      <Input placeholder={contactContent.form.namePlaceholder} {...field} className="bg-white placeholder:text-placeholder" />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="text-foreground">{contactContent.form.email}</FormLabel>
-                    <FormControl>
-                      <Input placeholder={contactContent.form.emailPlaceholder} {...field} className="bg-white placeholder:text-placeholder" />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="message"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="text-foreground">{contactContent.form.message}</FormLabel>
-                    <FormControl>
-                      <Textarea placeholder={contactContent.form.messagePlaceholder} rows={5} className="resize-y bg-white placeholder:text-placeholder" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <div className="flex justify-center pt-4">
-                <Button type="submit" size="lg" className="rounded-full shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 transform hover:-translate-y-1">
-                  {contactContent.button}
-                </Button>
-              </div>
-            </form>
-          </Form>
-        </div>
+          <div className="mx-auto mt-12 max-w-xl">
+            <Form {...form}>
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                <FormField
+                  control={form.control}
+                  name="name"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="text-foreground">{contactContent.form.name}</FormLabel>
+                      <FormControl>
+                        <Input placeholder={contactContent.form.namePlaceholder} {...field} className="bg-card placeholder:text-placeholder" />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="text-foreground">{contactContent.form.email}</FormLabel>
+                      <FormControl>
+                        <Input placeholder={contactContent.form.emailPlaceholder} {...field} className="bg-card placeholder:text-placeholder" />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="message"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="text-foreground">{contactContent.form.message}</FormLabel>
+                      <FormControl>
+                        <Textarea placeholder={contactContent.form.messagePlaceholder} rows={5} className="resize-y bg-card placeholder:text-placeholder" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <div className="flex justify-center pt-4">
+                  <Button type="submit" size="lg" className="rounded-full shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 transform hover:-translate-y-1">
+                    {contactContent.button}
+                  </Button>
+                </div>
+              </form>
+            </Form>
+          </div>
 
-        <div className="mx-auto max-w-3xl text-center mt-16">
-          <h3 className="text-xl font-semibold text-foreground">{contactContent.connectTitle}</h3>
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
-            <Link href={`mailto:${contactContent.emailAddress}`} className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
-              <Mail className="h-5 w-5" />
-              <span>{contactContent.emailAddress}</span>
-            </Link>
-            <Link href={footerContent.linkedin} target="_blank" className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
-              <Linkedin className="h-5 w-5" />
-              <span>{contactContent.linkedinDisplay}</span>
-            </Link>
-            <Link href={footerContent.instagram} target="_blank" className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
-              <Instagram className="h-5 w-5" />
-              <span>{footerContent.instagramHandle}</span>
-            </Link>
+          <div className="mx-auto max-w-3xl text-center mt-16">
+            <h3 className="text-xl font-semibold text-foreground">{contactContent.connectTitle}</h3>
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+              <Link href={`mailto:${contactContent.emailAddress}`} className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                <Mail className="h-5 w-5" />
+                <span>{contactContent.emailAddress}</span>
+              </Link>
+              <Link href={footerContent.linkedin} target="_blank" className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                <Linkedin className="h-5 w-5" />
+                <span>{contactContent.linkedinDisplay}</span>
+              </Link>
+              <Link href={footerContent.instagram} target="_blank" className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+                <Instagram className="h-5 w-5" />
+                <span>{footerContent.instagramHandle}</span>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

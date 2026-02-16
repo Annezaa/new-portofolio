@@ -9,24 +9,21 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { TrendingUp, ExternalLink } from 'lucide-react';
+import { TrendingUp, ExternalLink, ChevronDown } from 'lucide-react';
 import TitleTypingAnimation from '@/components/ui/title-typing-animation';
-
-type TeachingItem = typeof content.en.portfolio.teaching.items[0];
 
 export default function Portfolio() {
   const { language } = useLanguage();
   const portfolioContent = content[language].portfolio;
   
-  const [selectedProject, setSelectedProject] = useState<TeachingItem | null>(null);
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
   return (
-    <section id="portofolio" className="w-full py-12 md:py-24 lg:py-32" style={{backgroundImage: 'linear-gradient(180deg, hsl(var(--secondary)) 0%, hsl(345, 100%, 94%) 100%)'}}>
+    <section id="portofolio" className="w-full py-12 md:py-24 lg:py-32" style={{backgroundImage: 'linear-gradient(180deg, hsl(var(--background)) 0%, hsl(345, 100%, 97%) 100%)'}}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center space-y-4 mb-12">
           <TitleTypingAnimation text={portfolioContent.title} className="text-3xl font-serif font-bold tracking-tighter sm:text-5xl text-foreground" />
@@ -36,39 +33,23 @@ export default function Portfolio() {
           <TabsList className="grid w-full grid-cols-3 max-w-lg mx-auto bg-muted rounded-full p-1 h-12">
             <TabsTrigger 
               value="teaching" 
-              className="relative rounded-full data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-lg transition-all duration-300 py-2.5 text-base hover:scale-105 active:scale-95 focus-visible:ring-offset-0 focus-visible:ring-2 focus-visible:ring-ring"
+              className="relative rounded-full data-[state=active]:bg-card data-[state=active]:text-foreground data-[state=active]:shadow-lg transition-all duration-300 py-2.5 text-base hover:scale-105 active:scale-95 focus-visible:ring-offset-0 focus-visible:ring-2 focus-visible:ring-ring"
             >
               {portfolioContent.teaching.title}
             </TabsTrigger>
             <TabsTrigger 
               value="leadership"
-              className="relative rounded-full data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-lg transition-all duration-300 py-2.5 text-base hover:scale-105 active:scale-95 focus-visible:ring-offset-0 focus-visible:ring-2 focus-visible:ring-ring"
+              className="relative rounded-full data-[state=active]:bg-card data-[state=active]:text-foreground data-[state=active]:shadow-lg transition-all duration-300 py-2.5 text-base hover:scale-105 active:scale-95 focus-visible:ring-offset-0 focus-visible:ring-2 focus-visible:ring-ring"
             >
               {portfolioContent.leadership.title}
             </TabsTrigger>
             <TabsTrigger 
               value="writing"
-              className="relative rounded-full data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-lg transition-all duration-300 py-2.5 text-base hover:scale-105 active:scale-95 focus-visible:ring-offset-0 focus-visible:ring-2 focus-visible:ring-ring"
+              className="relative rounded-full data-[state=active]:bg-card data-[state=active]:text-foreground data-[state=active]:shadow-lg transition-all duration-300 py-2.5 text-base hover:scale-105 active:scale-95 focus-visible:ring-offset-0 focus-visible:ring-2 focus-visible:ring-ring"
             >
               {portfolioContent.writing.title}
             </TabsTrigger>
           </TabsList>
-          
-          <Dialog open={!!selectedProject} onOpenChange={(isOpen) => !isOpen && setSelectedProject(null)}>
-            <DialogContent className="sm:max-w-[625px] bg-card rounded-2xl shadow-2xl data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95">
-              {selectedProject && (
-                <>
-                  <DialogHeader>
-                    <DialogTitle className="font-serif text-2xl">{selectedProject.title}</DialogTitle>
-                    <DialogDescription className="text-sm pt-1">{selectedProject.institution}</DialogDescription>
-                  </DialogHeader>
-                  <div className="py-4 text-foreground/90 text-base">
-                    <p>{selectedProject.fullDescription || selectedProject.description}</p>
-                  </div>
-                </>
-              )}
-            </DialogContent>
-          </Dialog>
 
           <div className="relative mt-12 min-h-[65vh] overflow-hidden">
             <TabsContent 
@@ -79,37 +60,47 @@ export default function Portfolio() {
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {portfolioContent.teaching.items.slice(0, 3).map((item, index) => {
                   const image = getImage(item.image);
+                  const isOpen = expandedIndex === index;
                   return (
                     <Card key={index} className="group flex flex-col overflow-hidden rounded-2xl border bg-card transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 dark:hover:shadow-primary/10 hover:-translate-y-2">
-                      {image && (
-                        <div className="aspect-[4/3] overflow-hidden">
-                          <Image
-                            src={image.imageUrl}
-                            alt={item.title}
-                            width={600}
-                            height={450}
-                            className="object-cover transition-transform duration-300 group-hover:scale-105"
-                            data-ai-hint={image.imageHint}
-                          />
-                        </div>
-                      )}
-                      <CardHeader>
+                       <CardHeader>
                         <CardTitle className="font-serif text-xl font-bold text-foreground leading-tight">{item.title}</CardTitle>
                         <p className="text-sm text-muted-foreground pt-1">{item.institution}</p>
                       </CardHeader>
                       <CardContent className="flex-grow">
                         <p className="text-sm text-foreground/80 line-clamp-2">{item.description}</p>
                       </CardContent>
-                      <CardFooter className="flex-col items-start gap-4 pt-4">
+                      <CardFooter className="flex-col items-start gap-4 pt-0">
                         <div className="flex flex-wrap gap-2">
                           {item.tags.map(tag => (
                             <Badge key={tag} variant="secondary" className="font-normal text-xs">{tag}</Badge>
                           ))}
                         </div>
-                        <Button size="sm" className="rounded-full" onClick={() => setSelectedProject(item)}>
-                          {portfolioContent.viewDetails}
+                        <Button size="sm" className="rounded-full gap-1" onClick={() => setExpandedIndex(isOpen ? null : index)}>
+                          <span>{isOpen ? (language === 'id' ? 'Tutup' : 'Close') : portfolioContent.viewDetails}</span>
+                          <ChevronDown className={`h-4 w-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
                         </Button>
                       </CardFooter>
+                      <div 
+                        data-state={isOpen ? 'open' : 'closed'}
+                        className="overflow-hidden data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+                      >
+                         <div className="p-6 pt-2 border-t">
+                            {image && (
+                              <div className="aspect-[4/3] overflow-hidden rounded-lg mb-4">
+                                <Image
+                                  src={image.imageUrl}
+                                  alt={item.title}
+                                  width={600}
+                                  height={450}
+                                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                                  data-ai-hint={image.imageHint}
+                                />
+                              </div>
+                            )}
+                            <p className="text-sm text-foreground/90">{item.fullDescription}</p>
+                         </div>
+                      </div>
                     </Card>
                   );
                 })}
