@@ -60,9 +60,9 @@ export default function Contact() {
   }
 
   return (
-    <section id="kontak" className="relative w-full overflow-hidden py-20 md:py-32">
+    <section id="kontak" className="relative w-full overflow-hidden py-20 md:py-32" style={{backgroundImage: 'linear-gradient(to bottom, hsl(345, 100%, 95%), hsl(345, 100%, 98%))'}}>
       <div className="container mx-auto px-4 md:px-6">
-        <div className="mx-auto max-w-4xl p-8 md:p-12 bg-gradient-to-br from-primary/10 to-primary/20 rounded-2xl shadow-2xl shadow-primary/10">
+        <div className="mx-auto max-w-4xl p-8 md:p-12 bg-card rounded-2xl shadow-2xl shadow-primary/10 border">
           <div className="mx-auto max-w-3xl text-center">
             <TitleTypingAnimation text={contactContent.title} className="font-serif text-4xl font-bold tracking-tight text-foreground sm:text-5xl" />
             <p className="mt-6 text-lg leading-8 text-foreground/80">
@@ -120,23 +120,23 @@ export default function Contact() {
               </form>
             </Form>
           </div>
+        </div>
 
-          <div className="mx-auto max-w-3xl text-center mt-16">
-            <h3 className="text-xl font-semibold text-foreground">{contactContent.connectTitle}</h3>
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
-              <Link href={`mailto:${contactContent.emailAddress}`} className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
-                <Mail className="h-5 w-5" />
-                <span>{contactContent.emailAddress}</span>
-              </Link>
-              <Link href={footerContent.linkedin} target="_blank" className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
-                <Linkedin className="h-5 w-5" />
-                <span>{contactContent.linkedinDisplay}</span>
-              </Link>
-              <Link href={footerContent.instagram} target="_blank" className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
-                <Instagram className="h-5 w-5" />
-                <span>{footerContent.instagramHandle}</span>
-              </Link>
-            </div>
+        <div className="mx-auto max-w-3xl text-center mt-16">
+          <h3 className="text-xl font-semibold text-foreground">{contactContent.connectTitle}</h3>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+            <Link href={`mailto:${contactContent.emailAddress}`} className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+              <Mail className="h-5 w-5" />
+              <span>{contactContent.emailAddress}</span>
+            </Link>
+            <Link href={footerContent.linkedin} target="_blank" className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+              <Linkedin className="h-5 w-5" />
+              <span>{contactContent.linkedinDisplay}</span>
+            </Link>
+            <Link href={footerContent.instagram} target="_blank" className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors">
+              <Instagram className="h-5 w-5" />
+              <span>{footerContent.instagramHandle}</span>
+            </Link>
           </div>
         </div>
       </div>

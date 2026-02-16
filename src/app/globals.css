@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 345 100% 99%;
+    --background: 345 100% 97%;
     --foreground: 240 6% 10%;
     --card: 0 0% 100%;
     --card-foreground: 240 6% 10%;
@@ -12,36 +12,36 @@
     --popover-foreground: 240 6% 10%;
     --primary: 350 100% 88%;
     --primary-foreground: 350 80% 20%;
-    --secondary: 345 100% 95%;
+    --secondary: 345 100% 91%;
     --muted: 345 100% 97%;
     --muted-foreground: 240 4% 46%;
     --accent: 345 100% 97%;
     --accent-foreground: 240 5% 26%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
-    --border: 345 85% 94%;
-    --input: 345 85% 94%;
+    --border: 354 100% 86%;
+    --input: 354 100% 86%;
     --ring: 350 100% 88%;
     --placeholder-text: 328 17% 63%;
   }
  
   .dark {
-    --background: 270 10% 12%;
+    --background: 340 10% 12%;
     --foreground: 210 20% 98%;
-    --card: 270 9% 17%;
+    --card: 340 9% 17%;
     --card-foreground: 210 20% 98%;
     --primary: 350 100% 88%;
     --primary-foreground: 350 80% 20%;
-    --secondary: 270 12% 15%;
+    --secondary: 340 12% 15%;
     --secondary-foreground: 210 20% 98%;
-    --muted: 270 9% 17%;
+    --muted: 340 9% 17%;
     --muted-foreground: 240 4% 64%;
-    --accent: 270 9% 17%;
+    --accent: 340 9% 17%;
     --accent-foreground: 210 20% 98%;
     --destructive: 0 63% 31%;
     --destructive-foreground: 0 0% 98%;
-    --border: 270 9% 22%;
-    --input: 270 9% 22%;
+    --border: 354 50% 70%;
+    --input: 354 50% 70%;
     --ring: 350 100% 88%;
     --placeholder-text: 335 21% 63%;
   }
@@ -56,7 +56,7 @@
     background: linear-gradient(to bottom, hsl(var(--background)), hsl(var(--secondary)));
   }
   .dark body {
-    background: linear-gradient(to bottom, hsl(270 10% 12%), hsl(270 15% 17%));
+    background: linear-gradient(to bottom, hsl(var(--background)), hsl(var(--secondary)));
   }
   @keyframes blink {
     50% {
