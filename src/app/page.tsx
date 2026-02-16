@@ -5,10 +5,12 @@ import Portfolio from '@/components/landing/portfolio';
 import Skills from '@/components/landing/skills';
 import Contact from '@/components/landing/contact';
 import Footer from '@/components/landing/footer';
+import PageMetadata from '@/components/page-metadata';
 
 export default function Home() {
   return (
     <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden bg-background text-foreground">
+      <PageMetadata />
       <Header />
       <main className="flex-1">
         <Hero />

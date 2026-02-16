@@ -1,7 +1,12 @@
+'use client';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { useLanguage } from '@/components/language-provider';
+import { content } from '@/lib/content';
 
 export default function Hero() {
+  const { language } = useLanguage();
+  const heroContent = content[language].hero;
   const profileImage = PlaceHolderImages.find(img => img.id === 'profile-picture');
 
   return (
@@ -10,10 +15,10 @@ export default function Hero() {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-24 items-center">
           <div className="space-y-4 text-center lg:text-left">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-foreground">
-              Halo, saya Annisa Ramadhona
+              {heroContent.greeting}
             </h1>
             <p className="text-lg text-foreground/80 md:text-xl">
-              Mathematics Educator | SEA Teacher | Academic Writer | Education Innovator
+              {heroContent.tagline}
             </p>
           </div>
           <div className="flex justify-center">
