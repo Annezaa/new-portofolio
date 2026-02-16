@@ -30,27 +30,30 @@ export const content = {
     portfolio: {
       title: 'Portofolio',
       teaching: {
-        title: '∑ Pengalaman Mengajar & Pendidikan',
+        title: '∑ Pengajaran',
         items: [
           {
             image: 'teaching-thailand',
             title: 'Praktik Mengajar Internasional (SEA Teacher)',
             institution: 'Thewittaya School, Lampang, Thailand | 2024',
-            description: 'Merancang dan melaksanakan pembelajaran matematika interaktif untuk siswa sekolah menengah dengan fokus pada pemecahan masalah kontekstual dan komunikasi lintas budaya.',
+            description: 'Merancang dan melaksanakan pembelajaran matematika interaktif untuk siswa sekolah menengah dengan fokus pada pemecahan masalah.',
+            fullDescription: 'Merancang dan melaksanakan pembelajaran matematika interaktif untuk siswa sekolah menengah dengan fokus pada pemecahan masalah kontekstual dan komunikasi lintas budaya. Memanfaatkan kurikulum Cambridge dan metodologi pembelajaran berbasis proyek untuk meningkatkan keterlibatan dan pemahaman siswa dalam lingkungan internasional.',
             tags: ['Pengajaran Internasional', 'Kurikulum Cambridge', 'Pembelajaran Berbasis Proyek']
           },
           {
             image: 'teaching-pmri',
             title: 'Asisten Dosen: Pemodelan Matematika',
             institution: 'Universitas Sriwijaya | 2024',
-            description: 'Membantu dosen dalam mengembangkan materi, memfasilitasi diskusi kelas, dan memberikan umpan balik pada proyek pemodelan matematika mahasiswa.',
+            description: 'Membantu mengembangkan materi, memfasilitasi diskusi, dan memberikan umpan balik pada proyek pemodelan matematika mahasiswa.',
+            fullDescription: 'Membantu dosen dalam mengembangkan materi, memfasilitasi diskusi kelas, dan memberikan umpan balik yang membangun pada proyek pemodelan matematika mahasiswa. Peran ini melibatkan pendalaman konsep pemodelan matematika dan strategi penilaian pendidikan tinggi.',
             tags: ['Pendidikan Tinggi', 'Pemodelan Matematika', 'Penilaian']
           },
           {
             image: 'teaching-workshop',
             title: 'Tutor Sebaya: Kalkulus & Aljabar Linear',
             institution: 'Pusat Belajar FKIP Unsri | 2023-2024',
-            description: 'Memberikan bimbingan kepada mahasiswa dalam memahami konsep-konsep dasar kalkulus dan aljabar linear melalui sesi tutorial kelompok kecil.',
+            description: 'Memberikan bimbingan kepada mahasiswa dalam memahami konsep-konsep dasar kalkulus dan aljabar linear.',
+            fullDescription: 'Memberikan bimbingan kepada sesama mahasiswa dalam memahami konsep-konsep dasar kalkulus dan aljabar linear melalui sesi tutorial kelompok kecil, mendorong lingkungan belajar yang kolaboratif.',
             tags: ['Bimbingan Belajar', 'Kalkulus', 'Aljabar Linear']
           },
           {
@@ -58,13 +61,13 @@ export const content = {
             title: 'Relawan Pengajar: Gerakan Unsri Mengajar',
             institution: 'Desa Pelakat, Musi Banyuasin | 2023',
             description: 'Mengajar matematika dan literasi dasar bagi anak-anak di daerah terpencil, serta mengorganisir kegiatan edukatif berbasis komunitas.',
+            fullDescription: 'Mengajar matematika dan literasi dasar bagi anak-anak di daerah terpencil, serta mengorganisir kegiatan edukatif berbasis komunitas untuk meningkatkan akses dan kualitas pendidikan.',
             tags: ['Pengabdian Masyarakat', 'Pendidikan Dasar', 'Literasi']
           }
-        ],
-        viewAll: 'Lihat Semua Pengalaman Mengajar'
+        ]
       },
       leadership: {
-        title: 'π Kepemimpinan & Keterlibatan Komunitas',
+        title: 'π Kepemimpinan',
         items: [
           {
             image: 'leadership-conference',
@@ -83,7 +86,7 @@ export const content = {
         ]
       },
       writing: {
-        title: '□ Publikasi & Tulisan',
+        title: '□ Tulisan',
         categories: [
           {
             name: 'Buku',
@@ -102,16 +105,16 @@ export const content = {
             items: [
               {
                 image: 'publication-article',
-                title: 'Trash to Cash: Strategi Ekonomi Kreatif Menghadapi Resesi',
+                title: 'Trash to Cash: Strategi Ekonomi Kreatif',
                 category: 'Artikel',
-                description: 'Karya tulis ilmiah yang memenangkan penghargaan nasional, mengusulkan model ekonomi sirkular berbasis komunitas.',
+                description: 'Karya tulis ilmiah pemenang penghargaan yang mengusulkan model ekonomi sirkular berbasis komunitas.',
                 link: '#'
               },
                {
-                image: 'publication-article',
+                image: 'publication-article-2',
                 title: 'Etnomatematika pada Kain Songket Palembang',
                 category: 'Artikel',
-                description: 'Penelitian yang mengkaji konsep-konsep geometri dalam motif songket sebagai konteks pembelajaran matematika budaya.',
+                description: 'Penelitian yang mengkaji konsep geometri dalam motif songket sebagai konteks pembelajaran matematika budaya.',
                 link: '#'
               }
             ]
@@ -195,27 +198,30 @@ export const content = {
     portfolio: {
       title: 'Portfolio',
       teaching: {
-        title: '∑ Teaching & Educational Experience',
+        title: '∑ Teaching',
         items: [
           {
             image: 'teaching-thailand',
             title: 'International Teaching Practicum (SEA Teacher)',
             institution: 'Thewittaya School, Lampang, Thailand | 2024',
-            description: 'Designed and implemented interactive mathematics lessons for secondary students with a focus on contextual problem-solving and cross-cultural communication.',
+            description: 'Designed and implemented interactive mathematics lessons for secondary students focusing on contextual problem-solving.',
+            fullDescription: 'Designed and implemented interactive mathematics lessons for secondary students with a focus on contextual problem-solving and cross-cultural communication. Utilized the Cambridge curriculum and project-based learning methodologies to enhance student engagement and understanding in an international setting.',
             tags: ['International Teaching', 'Cambridge Curriculum', 'Project-Based Learning']
           },
           {
             image: 'teaching-pmri',
             title: 'Teaching Assistant: Mathematical Modeling',
             institution: 'Sriwijaya University | 2024',
-            description: 'Assisted the professor in developing materials, facilitating class discussions, and providing feedback on student mathematical modeling projects.',
+            description: 'Assisted in developing materials, facilitating discussions, and providing feedback on student modeling projects.',
+            fullDescription: 'Assisted the professor in developing materials, facilitating class discussions, and providing constructive feedback on student mathematical modeling projects. This role involved a deep dive into mathematical modeling concepts and higher education assessment strategies.',
             tags: ['Higher Education', 'Mathematical Modeling', 'Assessment']
           },
           {
             image: 'teaching-workshop',
             title: 'Peer Tutor: Calculus & Linear Algebra',
             institution: 'FKIP Unsri Learning Center | 2023-2024',
-            description: 'Provided guidance to fellow students in understanding fundamental concepts of calculus and linear algebra through small group tutorial sessions.',
+            description: 'Provided guidance to fellow students in understanding fundamental concepts of calculus and linear algebra.',
+            fullDescription: 'Provided guidance to fellow students in understanding fundamental concepts of calculus and linear algebra through small group tutorial sessions, fostering a collaborative learning environment.',
             tags: ['Tutoring', 'Calculus', 'Linear Algebra']
           },
           {
@@ -223,13 +229,13 @@ export const content = {
             title: 'Volunteer Teacher: Unsri Mengajar Movement',
             institution: 'Pelakat Village, Musi Banyuasin | 2023',
             description: 'Taught basic mathematics and literacy to children in a remote area, and organized community-based educational activities.',
+            fullDescription: 'Taught basic mathematics and literacy to children in a remote area, and organized community-based educational activities to improve educational access and quality.',
             tags: ['Community Service', 'Primary Education', 'Literacy']
           }
-        ],
-        viewAll: 'View All Teaching Experience'
+        ]
       },
       leadership: {
-        title: 'π Leadership & Community Engagement',
+        title: 'π Leadership',
         items: [
           {
             image: 'leadership-conference',
@@ -248,7 +254,7 @@ export const content = {
         ]
       },
       writing: {
-        title: '□ Publication & Writing',
+        title: '□ Writing',
         categories: [
           {
             name: 'Book',
@@ -257,7 +263,7 @@ export const content = {
                 image: 'publication-book',
                 title: 'Essay Anthology: Bandung a Million Stories',
                 category: 'Book',
-                description: 'Contributed as the first author in an essay anthology exploring the cultural and social narratives of the city of Bandung.',
+                description: 'Contributed as the first author in an essay anthology exploring the cultural and social narratives of Bandung.',
                 link: '#'
               }
             ]
@@ -267,13 +273,13 @@ export const content = {
             items: [
               {
                 image: 'publication-article',
-                title: 'Trash to Cash: A Creative Economy Strategy to Face Recession',
+                title: 'Trash to Cash: A Creative Economy Strategy',
                 category: 'Article',
-                description: 'A national award-winning scientific paper proposing a community-based circular economy model.',
+                description: 'An award-winning scientific paper proposing a community-based circular economy model.',
                 link: '#'
               },
               {
-                image: 'publication-article',
+                image: 'publication-article-2',
                 title: 'Ethnomathematics in Palembang Songket Fabric',
                 category: 'Article',
                 description: 'Research examining geometric concepts in songket motifs as a context for cultural mathematics learning.',
