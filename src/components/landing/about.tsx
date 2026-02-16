@@ -18,9 +18,6 @@ export default function About() {
               <p className="text-foreground/90 md:text-xl/relaxed">
                 {aboutContent.p2}
               </p>
-              <p className="text-foreground/70">
-                {aboutContent.p3}
-              </p>
             </div>
             <div className="flex flex-col gap-6 lg:col-span-2">
               <h3 className="text-2xl font-bold text-foreground">{aboutContent.achievementsTitle}</h3>

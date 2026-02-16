@@ -17,7 +17,6 @@ export const content = {
       title: 'Tentang Saya',
       p1: 'Saya merupakan mahasiswa Pendidikan Matematika FKIP Universitas Sriwijaya yang berfokus pada pengembangan pembelajaran inovatif, penulisan ilmiah, serta penguatan kualitas pendidikan berbasis riset dan refleksi pedagogis.',
       p2: 'Saya memiliki pengalaman mengajar di berbagai lingkungan pendidikan dan terbiasa beradaptasi dengan beragam karakteristik peserta didik. Dalam setiap proses pembelajaran, saya merancang pendekatan yang kontekstual, sistematis, dan berorientasi pada pemahaman konseptual serta pengembangan kemampuan berpikir kritis.',
-      p3: 'Bagi saya, matematika bukan sekadar disiplin ilmu, melainkan sarana untuk membangun pola pikir analitis, ketelitian, kreativitas, serta keberanian intelektual dalam menghadapi permasalahan nyata.',
       achievementsTitle: 'Pencapaian',
       achievements: [
         { icon: '🏆', text: '20+ Kompetisi Kepenulisan (Esai & Karya Tulis Ilmiah)' },
@@ -120,7 +119,6 @@ export const content = {
       title: 'About Me',
       p1: 'I am a Mathematics Education student at FKIP Sriwijaya University, active in education, writing, and learning innovation.',
       p2: 'As a SEA Teacher in Lampang, Thailand, I have cross-cultural teaching experience and design meaningful learning based on real-world contexts.',
-      p3: 'I believe that mathematical creativity has no limits.',
       achievementsTitle: 'Achievements',
       achievements: [
         { icon: '🏆', text: '20+ Writing Competitions (Essays & Scientific Papers)' },
