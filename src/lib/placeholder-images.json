@@ -2,33 +2,9 @@
   "placeholderImages": [
     {
       "id": "profile-picture",
-      "description": "A professional and friendly portrait of Annisa Ramadhona.",
-      "imageUrl": "https://images.unsplash.com/photo-1609505848912-b7c3b8b4beda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc3MTExMzc4NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman portrait"
-    },
-    {
-      "id": "portfolio-1",
-      "description": "An image representing a branding identity project.",
-      "imageUrl": "https://images.unsplash.com/photo-1519408469771-2586093c3f14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxncmFwaGljJTIwZGVzaWdufGVufDB8fHx8MTc3MTEzODM4MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "graphic design"
-    },
-    {
-      "id": "portfolio-2",
-      "description": "An image representing a UI/UX redesign project.",
-      "imageUrl": "https://images.unsplash.com/photo-1547119957-637f8679db1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx1aSUyMGRlc2lnbnxlbnwwfHx8fDE3NzEyMTczMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ui design"
-    },
-    {
-      "id": "portfolio-3",
-      "description": "An image representing a social media campaign.",
-      "imageUrl": "https://images.unsplash.com/photo-1580317092864-3237cbdf8ebf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb250ZW50JTIwY3JlYXRpb258ZW58MHx8fHwxNzcxMjE3MzM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "content creation"
-    },
-    {
-      "id": "portfolio-4",
-      "description": "An image representing a web design project.",
-      "imageUrl": "https://images.unsplash.com/photo-1635870224947-8ce9fd728344?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxicmFuZGluZyUyMG1vY2t8ZW58MHx8fHwxNzcxMjE3MzM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "branding mock"
+      "description": "A professional portrait of Annisa Ramadhona, a mathematics educator.",
+      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmZW1hbGUlMjBlZHVjYXRvciUyMHBvcnRyYWl0fGVufDB8fHx8MTc3MjE5MzI4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "educator portrait"
     }
   ]
 }

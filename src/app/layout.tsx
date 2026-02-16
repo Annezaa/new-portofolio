@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: "Annisa's Digital Stage",
-  description: 'Personal portfolio for Annisa Ramadhona - Graphic Designer, Content Creator, UI/UX Enthusiast',
+  title: "Annisa Ramadhona | Mathematics Educator",
+  description: 'Personal portfolio for Annisa Ramadhona - Mathematics Educator, SEA Teacher, Academic Writer, and Education Innovator.',
 };
 
 export default function RootLayout({
