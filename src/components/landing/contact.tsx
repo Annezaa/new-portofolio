@@ -59,9 +59,9 @@ export default function Contact() {
   }
 
   return (
-    <section id="kontak" className="relative w-full overflow-hidden bg-background py-20 md:py-32">
+    <section id="kontak" className="relative w-full overflow-hidden py-20 md:py-32">
        <div
-        className="absolute inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,hsl(var(--secondary))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--secondary))_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-30 dark:bg-[linear-gradient(to_right,hsl(var(--primary)/0.05)_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--primary)/0.05)_1px,transparent_1px)]"
+        className="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,hsl(var(--secondary))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--secondary))_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-30 dark:bg-[linear-gradient(to_right,hsl(var(--primary)/0.05)_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--primary)/0.05)_1px,transparent_1px)]"
         style={{
           maskImage: 'radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)',
         }}

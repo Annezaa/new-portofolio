@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 340 100% 91%; /* #FFD1DC */
+    --background: 330 80% 97%; /* #FDF0F6 */
     --foreground: 240 6% 10%;
     --card: 0 0% 100%;
     --card-foreground: 240 6% 10%;
@@ -12,16 +12,16 @@
     --popover-foreground: 240 6% 10%;
     --primary: 332 79% 75%; /* #F6B7D2 */
     --primary-foreground: 0 0% 100%;
-    --secondary: 336 60% 95%;
+    --secondary: 330 67% 94%; /* #FBE4F0 */
     --secondary-foreground: 240 5% 26%;
-    --muted: 336 60% 95%;
+    --muted: 330 67% 94%;
     --muted-foreground: 240 4% 46%;
-    --accent: 336 60% 95%;
+    --accent: 330 67% 94%;
     --accent-foreground: 240 5% 26%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
-    --border: 336 30% 90%;
-    --input: 336 30% 90%;
+    --border: 332 79% 90%;
+    --input: 332 79% 90%;
     --ring: 332 79% 75%;
     --radius: 0.5rem;
     --placeholder-text: 327 21% 63%; /* #B88AA7 */
@@ -56,7 +56,11 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    background: linear-gradient(to bottom, hsl(330 80% 97%), hsl(330 67% 94%));
+  }
+  .dark body {
+    background: linear-gradient(to bottom, hsl(260 11% 11%), hsl(270 15% 17%));
   }
   @keyframes blink {
     50% {

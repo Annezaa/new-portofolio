@@ -9,7 +9,7 @@ import PageMetadata from '@/components/page-metadata';
 
 export default function Home() {
   return (
-    <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden bg-background text-foreground">
+    <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden text-foreground">
       <PageMetadata />
       <Header />
       <main className="flex-1">

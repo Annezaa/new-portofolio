@@ -19,7 +19,7 @@ export default function Skills() {
   const skillsContent = content[language].skills;
 
   return (
-    <section id="keahlian" className="w-full bg-background py-12 md:py-24 lg:py-32">
+    <section id="keahlian" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-serif font-bold tracking-tighter sm:text-5xl">{skillsContent.title}</h2>

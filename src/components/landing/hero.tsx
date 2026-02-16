@@ -13,7 +13,7 @@ export default function Hero() {
   const profileImage = PlaceHolderImages.find(img => img.id === 'profile-picture');
 
   return (
-    <section id="home" className="w-full min-h-screen flex items-center bg-background">
+    <section id="home" className="w-full min-h-screen flex items-center">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-24 items-center">
           <div className="space-y-6 text-center lg:text-left">
