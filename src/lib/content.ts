@@ -73,12 +73,16 @@ export const content = {
       title: 'Mari Berkolaborasi',
       subtitle: 'Saya terbuka untuk kolaborasi, proyek pendidikan, dan gagasan inovatif yang membawa dampak nyata. Mari bangun sesuatu yang bermakna bersama.',
       button: 'Kirim Pesan',
-      email: 'mailto:annisa031104@gmail.com'
+      email: 'mailto:annisa031104@gmail.com',
+      connectTitle: 'Terhubung dengan Saya',
+      emailAddress: 'annisa031104@gmail.com',
+      linkedinDisplay: 'linkedin.com/in/annisa-ramadhona',
     },
     footer: {
       copyright: '© 2026 Annisa Ramadhona. All rights reserved.',
       linkedin: 'https://www.linkedin.com/in/annisa-ramadhona/',
-      instagram: 'https://instagram.com/sastudyyy'
+      instagram: 'https://instagram.com/sastudyyy',
+      instagramHandle: '@sastudyyy'
     }
   },
   en: {
@@ -155,12 +159,16 @@ export const content = {
       title: 'Let\'s Collaborate',
       subtitle: 'I am open to collaborations, educational projects, and innovative ideas that make a real impact. Let\'s build something meaningful together.',
       button: 'Send a Message',
-      email: 'mailto:annisa031104@gmail.com'
+      email: 'mailto:annisa031104@gmail.com',
+      connectTitle: 'Connect with Me',
+      emailAddress: 'annisa031104@gmail.com',
+      linkedinDisplay: 'linkedin.com/in/annisa-ramadhona',
     },
     footer: {
       copyright: '© 2026 Annisa Ramadhona. All rights reserved.',
       linkedin: 'https://www.linkedin.com/in/annisa-ramadhona/',
-      instagram: 'https://instagram.com/sastudyyy'
+      instagram: 'https://instagram.com/sastudyyy',
+      instagramHandle: '@sastudyyy'
     }
   }
 };
