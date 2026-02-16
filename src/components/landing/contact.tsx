@@ -19,6 +19,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { useEffect, useMemo } from 'react';
+import TitleTypingAnimation from '@/components/ui/title-typing-animation';
 
 export default function Contact() {
   const { language } = useLanguage();
@@ -68,9 +69,7 @@ export default function Contact() {
        ></div>
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-serif text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-            {contactContent.title}
-          </h2>
+          <TitleTypingAnimation text={contactContent.title} className="font-serif text-4xl font-bold tracking-tight text-foreground sm:text-5xl" />
           <p className="mt-6 text-lg leading-8 text-foreground/80">
             {contactContent.subtitle}
           </p>

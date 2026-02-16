@@ -11,7 +11,7 @@ export const content = {
     ],
     hero: {
       greeting: 'Halo, saya Annisa Ramadhona',
-      tagline: 'Mathematics Education Specialist | Researcher | Writer | Innovator',
+      tagline: 'Spesialis Pendidikan Matematika | Peneliti | Penulis | Inovator',
       ctaPrimary: 'Lihat Portofolio',
       ctaSecondary: 'Hubungi Saya',
     },
@@ -19,12 +19,12 @@ export const content = {
       title: 'Tentang Saya',
       p1: 'Saya merupakan mahasiswa Pendidikan Matematika FKIP Universitas Sriwijaya yang berfokus pada pengembangan pembelajaran inovatif, penulisan ilmiah, serta penguatan kualitas pendidikan berbasis riset dan refleksi pedagogis.',
       p2: 'Saya memiliki pengalaman mengajar di berbagai lingkungan pendidikan dan terbiasa beradaptasi dengan beragam karakteristik peserta didik. Dalam setiap proses pembelajaran, saya merancang pendekatan yang kontekstual, sistematis, dan berorientasi pada pemahaman konseptual serta pengembangan kemampuan berpikir kritis.',
-      achievementsTitle: 'Pencapaian',
+      achievementsTitle: 'Pencapaian Profesional',
       achievements: [
-        { icon: '🏆', text: '20+ Kompetisi Kepenulisan (Esai & Karya Tulis Ilmiah)' },
-        { icon: '🌍', text: 'Program Mengajar & Pengabdian Nasional–Internasional' },
-        { icon: '📚', text: 'Penulis Pertama “Antologi Esai: Bandung Sejuta Cerita”' },
-        { icon: '🎓', text: 'Mahasiswa Berprestasi FKIP UNSRI 2025' },
+        { icon: '🏆', text: 'Pemenang di 20+ Kompetisi Penulisan (Esai & Karya Tulis Ilmiah)' },
+        { icon: '🌍', text: 'Penerima Beasiswa Program Mengajar & Pengabdian Nasional-Internasional' },
+        { icon: '📚', text: 'Penulis Utama dalam "Antologi Esai: Bandung Sejuta Cerita"' },
+        { icon: '🎓', text: 'Mahasiswa Berprestasi Utama FKIP UNSRI 2025' },
       ],
     },
     portfolio: {
@@ -128,7 +128,7 @@ export const content = {
     },
     skills: {
       title: 'Keahlian',
-      subtitle: 'Area keahlian saya dan alat yang saya gunakan untuk menciptakan pengalaman belajar yang inovatif.',
+      subtitle: 'Menguasai berbagai aspek pendidikan matematika dan pengembangan pembelajaran inovatif.',
       skillList: [
         { name: 'Perancangan Pembelajaran Matematika', icon: 'BookMarked' },
         { name: 'PMRI & Pemodelan Matematika', icon: 'Sigma' },
@@ -141,7 +141,7 @@ export const content = {
     },
     contact: {
       title: 'Mari Berkolaborasi',
-      subtitle: 'Saya terbuka untuk kolaborasi, proyek pendidikan, dan gagasan inovatif yang membawa dampak nyata. Mari bangun sesuatu yang bermakna bersama.',
+      subtitle: 'Terbuka untuk kolaborasi, proyek pendidikan, dan diskusi profesional.',
       button: 'Kirim Pesan',
       email: 'mailto:annisa031104@gmail.com',
       connectTitle: 'Terhubung dengan Saya',
@@ -191,12 +191,12 @@ export const content = {
       title: 'About Me',
       p1: 'I am a Mathematics Education student at FKIP Sriwijaya University, focusing on developing innovative learning, scientific writing, and strengthening education quality through research and pedagogical reflection.',
       p2: 'I have teaching experience in various educational settings and am accustomed to adapting to diverse student characteristics. In every learning process, I design contextual, systematic approaches oriented towards conceptual understanding and critical thinking development.',
-      achievementsTitle: 'Achievements',
+      achievementsTitle: 'Professional Achievements',
       achievements: [
-        { icon: '🏆', text: '20+ Writing Competitions (Essays & Scientific Papers)' },
-        { icon: '🌍', text: 'National & International Teaching and Service Programs' },
+        { icon: '🏆', text: 'Winner in 20+ Writing Competitions (Essays & Scientific Papers)' },
+        { icon: '🌍', text: 'Scholarship Recipient for National & International Teaching Programs' },
         { icon: '📚', text: 'First Author of "Essay Anthology: Bandung A Million Stories"' },
-        { icon: '🎓', text: 'Outstanding Student of FKIP UNSRI 2025' },
+        { icon: '🎓', text: 'Main Outstanding Student of FKIP UNSRI 2025' },
       ],
     },
     portfolio: {
@@ -300,7 +300,7 @@ export const content = {
     },
     skills: {
       title: 'Skills',
-      subtitle: 'My areas of expertise and the tools I use to create innovative learning experiences.',
+      subtitle: 'Mastering various aspects of mathematics education and innovative learning development.',
       skillList: [
         { name: 'Mathematics Learning Design', icon: 'BookMarked' },
         { name: 'PMRI & Mathematical Modeling', icon: 'Sigma' },
@@ -313,7 +313,7 @@ export const content = {
     },
     contact: {
       title: 'Let\'s Collaborate',
-      subtitle: 'I am open to collaborations, educational projects, and innovative ideas that make a real impact. Let\'s build something meaningful together.',
+      subtitle: 'Open to collaborations, educational projects, and professional discussions.',
       button: 'Send Message',
       email: 'mailto:annisa031104@gmail.com',
       connectTitle: 'Connect with Me',
