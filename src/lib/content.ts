@@ -29,6 +29,7 @@ export const content = {
     },
     portfolio: {
       title: 'Portofolio',
+      viewDetails: 'Lihat Selengkapnya',
       teaching: {
         title: '∑ Pengajaran',
         items: [
@@ -194,6 +195,7 @@ export const content = {
     },
     portfolio: {
       title: 'Portfolio',
+      viewDetails: 'View Details',
       teaching: {
         title: '∑ Teaching',
         items: [

@@ -12,7 +12,7 @@ import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { ArrowUpRight, TrendingUp, ExternalLink } from 'lucide-react';
+import { TrendingUp, ExternalLink } from 'lucide-react';
 import TitleTypingAnimation from '@/components/ui/title-typing-animation';
 
 type TeachingItem = typeof content.en.portfolio.teaching.items[0];
@@ -26,7 +26,7 @@ export default function Portfolio() {
   const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
   return (
-    <section id="portofolio" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
+    <section id="portofolio" className="w-full py-12 md:py-24 lg:py-32" style={{backgroundImage: 'linear-gradient(180deg, hsl(var(--secondary)) 0%, hsl(345, 100%, 94%) 100%)'}}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center space-y-4 mb-12">
           <TitleTypingAnimation text={portfolioContent.title} className="text-3xl font-serif font-bold tracking-tighter sm:text-5xl text-foreground" />
@@ -36,19 +36,19 @@ export default function Portfolio() {
           <TabsList className="grid w-full grid-cols-3 max-w-lg mx-auto bg-muted rounded-full p-1 h-12">
             <TabsTrigger 
               value="teaching" 
-              className="relative rounded-full data-[state=active]:bg-primary/20 data-[state=active]:text-primary-foreground data-[state=active]:shadow-lg transition-all duration-300 py-2.5 text-base hover:scale-105 active:scale-95 focus-visible:ring-offset-0 focus-visible:ring-2 focus-visible:ring-ring"
+              className="relative rounded-full data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-lg transition-all duration-300 py-2.5 text-base hover:scale-105 active:scale-95 focus-visible:ring-offset-0 focus-visible:ring-2 focus-visible:ring-ring"
             >
               {portfolioContent.teaching.title}
             </TabsTrigger>
             <TabsTrigger 
               value="leadership"
-              className="relative rounded-full data-[state=active]:bg-primary/20 data-[state=active]:text-primary-foreground data-[state=active]:shadow-lg transition-all duration-300 py-2.5 text-base hover:scale-105 active:scale-95 focus-visible:ring-offset-0 focus-visible:ring-2 focus-visible:ring-ring"
+              className="relative rounded-full data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-lg transition-all duration-300 py-2.5 text-base hover:scale-105 active:scale-95 focus-visible:ring-offset-0 focus-visible:ring-2 focus-visible:ring-ring"
             >
               {portfolioContent.leadership.title}
             </TabsTrigger>
             <TabsTrigger 
               value="writing"
-              className="relative rounded-full data-[state=active]:bg-primary/20 data-[state=active]:text-primary-foreground data-[state=active]:shadow-lg transition-all duration-300 py-2.5 text-base hover:scale-105 active:scale-95 focus-visible:ring-offset-0 focus-visible:ring-2 focus-visible:ring-ring"
+              className="relative rounded-full data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-lg transition-all duration-300 py-2.5 text-base hover:scale-105 active:scale-95 focus-visible:ring-offset-0 focus-visible:ring-2 focus-visible:ring-ring"
             >
               {portfolioContent.writing.title}
             </TabsTrigger>
@@ -106,8 +106,8 @@ export default function Portfolio() {
                             <Badge key={tag} variant="secondary" className="font-normal text-xs">{tag}</Badge>
                           ))}
                         </div>
-                        <Button variant="link" className="p-0 h-auto text-primary" onClick={() => setSelectedProject(item)}>
-                          {language === 'id' ? 'Lihat Detail' : 'View Details'}
+                        <Button size="sm" className="rounded-full" onClick={() => setSelectedProject(item)}>
+                          {portfolioContent.viewDetails}
                         </Button>
                       </CardFooter>
                     </Card>
