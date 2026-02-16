@@ -1,3 +1,4 @@
+
 export const content = {
   id: {
     title: 'Annisa Ramadhona | Pendidik Matematika',
@@ -10,19 +11,19 @@ export const content = {
     ],
     hero: {
       greeting: 'Halo, saya Annisa Ramadhona',
-      tagline: 'Mathematics Educator | SEA Teacher | Academic Writer | Education Innovator',
+      tagline: 'Mathematics Education Specialist | Researcher | Writer | Innovator',
     },
     about: {
       title: 'Tentang Saya',
       p1: 'Saya merupakan mahasiswa Pendidikan Matematika FKIP Universitas Sriwijaya yang berfokus pada pengembangan pembelajaran inovatif, penulisan ilmiah, serta penguatan kualitas pendidikan berbasis riset dan refleksi pedagogis.',
       p2: 'Saya memiliki pengalaman mengajar di berbagai lingkungan pendidikan dan terbiasa beradaptasi dengan beragam karakteristik peserta didik. Dalam setiap proses pembelajaran, saya merancang pendekatan yang kontekstual, sistematis, dan berorientasi pada pemahaman konseptual serta pengembangan kemampuan berpikir kritis.',
       p3: 'Bagi saya, matematika bukan sekadar disiplin ilmu, melainkan sarana untuk membangun pola pikir analitis, ketelitian, kreativitas, serta keberanian intelektual dalam menghadapi permasalahan nyata.',
-      achievementsTitle: 'Saya juga merupakan:',
+      achievementsTitle: 'Pencapaian',
       achievements: [
-        { icon: '🏆', text: 'Juara 1 Lomba Karya Tulis Ilmiah Nasional' },
-        { icon: '🥈', text: 'Medali Perak & Video Favorit – Essay Idea Fest Yogyakarta' },
-        { icon: '📚', text: 'Penulis “Antologi Esai: Bandung Sejuta Cerita”' },
-        { icon: '🎓', text: 'Finalis / Mawapres FKIP UNSRI 2025' },
+        { icon: '🏆', text: '20+ Kompetisi Kepenulisan (Esai & Karya Tulis Ilmiah)' },
+        { icon: '🌍', text: 'Program Mengajar & Pengabdian Nasional–Internasional' },
+        { icon: '📚', text: 'Penulis Pertama “Antologi Esai: Bandung Sejuta Cerita”' },
+        { icon: '🎓', text: 'Mahasiswa Berprestasi FKIP UNSRI 2025' },
       ],
     },
     portfolio: {
@@ -120,12 +121,12 @@ export const content = {
       p1: 'I am a Mathematics Education student at FKIP Sriwijaya University, active in education, writing, and learning innovation.',
       p2: 'As a SEA Teacher in Lampang, Thailand, I have cross-cultural teaching experience and design meaningful learning based on real-world contexts.',
       p3: 'I believe that mathematical creativity has no limits.',
-      achievementsTitle: 'I am also:',
+      achievementsTitle: 'Achievements',
       achievements: [
-        { icon: '🏆', text: '1st Place National Scientific Writing Competition' },
-        { icon: '🥈', text: 'Silver Medal & Favorite Video – Essay Idea Fest Yogyakarta' },
-        { icon: '📚', text: 'Author of "Essay Anthology: Bandung A Million Stories"' },
-        { icon: '🎓', text: 'Finalist / Outstanding Student FKIP UNSRI 2025' },
+        { icon: '🏆', text: '20+ Writing Competitions (Essays & Scientific Papers)' },
+        { icon: '🌍', text: 'National & International Teaching and Service Programs' },
+        { icon: '📚', text: 'First Author of "Essay Anthology: Bandung A Million Stories"' },
+        { icon: '🎓', text: 'Outstanding Student of FKIP UNSRI 2025' },
       ],
     },
     portfolio: {
