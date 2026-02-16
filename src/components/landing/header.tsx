@@ -28,7 +28,7 @@ export default function Header() {
   return (
     <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-sm shadow-sm' : 'bg-transparent'}`}>
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="text-2xl font-semibold tracking-tight font-headline">
+        <Link href="/" className="text-2xl font-medium tracking-tight">
           Annisa Ramadhona
         </Link>
         
@@ -56,7 +56,7 @@ export default function Header() {
               </SheetTrigger>
               <SheetContent side="right">
                 <div className="flex flex-col gap-6 p-6">
-                  <Link href="/" className="text-2xl font-semibold tracking-tight font-headline" onClick={() => setIsOpen(false)}>
+                  <Link href="/" className="text-2xl font-medium tracking-tight" onClick={() => setIsOpen(false)}>
                     Annisa Ramadhona
                   </Link>
                   <nav className="flex flex-col gap-4">

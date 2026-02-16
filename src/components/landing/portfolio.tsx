@@ -34,8 +34,8 @@ export default function Portfolio() {
     <section id="portofolio" className="w-full py-12 md:py-24 lg:py-32 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center space-y-4">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-800 dark:text-gray-100">Portofolio</h2>
-          <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl dark:text-gray-300">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-foreground">Portofolio</h2>
+          <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl">
             Berikut adalah beberapa proyek dan pengalaman yang telah saya kerjakan.
           </p>
         </div>
@@ -43,14 +43,14 @@ export default function Portfolio() {
           {portfolioItems.map((item) => {
             const Icon = item.icon;
             return (
-              <Card key={item.title} className="group transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white dark:bg-gray-800/20 border-transparent hover:border-primary/50">
+              <Card key={item.title} className="group transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-card border-transparent hover:border-primary">
                 <CardHeader className="flex flex-row items-center gap-4 p-6">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary-foreground">
-                    <Icon className="h-6 w-6 text-gray-700 dark:text-gray-200" />
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary">
+                    <Icon className="h-6 w-6" />
                   </div>
-                  <CardTitle className="text-gray-800 dark:text-gray-100">{item.title}</CardTitle>
+                  <CardTitle className="text-foreground">{item.title}</CardTitle>
                 </CardHeader>
-                <CardDescription className="px-6 pb-6 text-gray-600 dark:text-gray-300">{item.description}</CardDescription>
+                <CardDescription className="px-6 pb-6 text-foreground/80">{item.description}</CardDescription>
               </Card>
             );
           })}
