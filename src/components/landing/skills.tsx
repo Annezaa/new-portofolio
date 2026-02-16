@@ -16,7 +16,7 @@ export default function Skills() {
     <section id="keahlian" className="w-full bg-secondary py-12 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Keahlian</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Keahlian</h2>
           <p className="mt-4 text-foreground/80 md:text-xl/relaxed">
             Area keahlian saya dan alat yang saya gunakan untuk menciptakan pengalaman belajar yang inovatif.
           </p>

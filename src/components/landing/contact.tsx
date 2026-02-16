@@ -13,12 +13,12 @@ export default function Contact() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Hubungi Saya</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Hubungi Saya</h2>
             <p className="text-xl text-foreground/80">
               Let’s build meaningful education together.
             </p>
             <div className="space-y-4">
-              <h3 className="text-2xl font-semibold">Saya terbuka untuk:</h3>
+              <h3 className="text-2xl font-semibold font-headline">Saya terbuka untuk:</h3>
               <ul className="space-y-2">
                 {opportunities.map((opp) => (
                   <li key={opp} className="flex items-center gap-3">
@@ -31,7 +31,7 @@ export default function Contact() {
           </div>
 
           <div className="flex flex-col justify-center space-y-6 rounded-2xl bg-secondary p-8 lg:p-12">
-             <h3 className="text-2xl font-semibold">Connect with Me</h3>
+             <h3 className="text-2xl font-semibold font-headline">Connect with Me</h3>
               <div className="space-y-4">
                  <a href="mailto:annisa031104@gmail.com" className="flex items-center gap-4 group text-lg">
                     <Mail className="h-7 w-7 text-primary" />
