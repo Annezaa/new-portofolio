@@ -1,6 +1,7 @@
 'use client';
 import { useLanguage } from '@/components/language-provider';
 import { content } from '@/lib/content';
+import TitleTypingAnimation from '@/components/ui/title-typing-animation';
 
 export default function About() {
   const { language } = useLanguage();
@@ -9,7 +10,9 @@ export default function About() {
   return (
     <section id="tentang-saya" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
       <div className="container mx-auto px-4 md:px-6">
-        <h2 className="text-3xl font-serif font-bold tracking-tighter text-center sm:text-5xl mb-12 text-foreground">{aboutContent.title}</h2>
+        <div className="text-center mb-12">
+          <TitleTypingAnimation text={aboutContent.title} className="text-3xl font-serif font-bold tracking-tighter sm:text-5xl text-foreground" />
+        </div>
         <div className="grid items-start gap-12 lg:grid-cols-5">
             <div className="space-y-4 lg:col-span-3">
               <p className="text-foreground/90 md:text-xl/relaxed">

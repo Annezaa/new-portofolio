@@ -52,14 +52,14 @@ export default function Skills() {
               >
                 <div
                   className="
-                    bg-primary/20 text-primary-foreground 
+                    bg-card text-foreground 
                     rounded-full py-3 px-6 flex items-center gap-3 
-                    font-medium cursor-pointer border-2 border-transparent
+                    font-medium cursor-pointer border-2 border-primary/20
                     transition-all duration-300 ease-in-out
-                    group-hover:scale-110 group-hover:bg-card group-hover:text-primary group-hover:border-primary
+                    group-hover:scale-110 group-hover:bg-primary/10 group-hover:text-primary group-hover:border-primary
                   "
                 >
-                  {Icon && <Icon className="h-5 w-5 transition-colors duration-300" />}
+                  {Icon && <Icon className="h-5 w-5 text-primary/70 transition-colors duration-300 group-hover:text-primary" />}
                   <span>{skill.name}</span>
                 </div>
               </div>
