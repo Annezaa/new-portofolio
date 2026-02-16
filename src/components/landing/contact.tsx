@@ -86,7 +86,7 @@ export default function Contact() {
                   <FormItem>
                     <FormLabel className="text-foreground">{contactContent.form.name}</FormLabel>
                     <FormControl>
-                      <Input placeholder={contactContent.form.namePlaceholder} {...field} />
+                      <Input placeholder={contactContent.form.namePlaceholder} {...field} className="bg-white placeholder:text-placeholder" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -99,7 +99,7 @@ export default function Contact() {
                   <FormItem>
                     <FormLabel className="text-foreground">{contactContent.form.email}</FormLabel>
                     <FormControl>
-                      <Input placeholder={contactContent.form.emailPlaceholder} {...field} />
+                      <Input placeholder={contactContent.form.emailPlaceholder} {...field} className="bg-white placeholder:text-placeholder" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -112,14 +112,14 @@ export default function Contact() {
                   <FormItem>
                     <FormLabel className="text-foreground">{contactContent.form.message}</FormLabel>
                     <FormControl>
-                      <Textarea placeholder={contactContent.form.messagePlaceholder} rows={5} className="resize-y" {...field} />
+                      <Textarea placeholder={contactContent.form.messagePlaceholder} rows={5} className="resize-y bg-white placeholder:text-placeholder" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
               <div className="flex justify-center pt-4">
-                <Button type="submit" size="lg" className="rounded-full shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-shadow duration-300">
+                <Button type="submit" size="lg" className="rounded-full shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 transform hover:-translate-y-1">
                   {contactContent.button}
                 </Button>
               </div>

@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 336 100% 98%; /* #FDF0F6 */
+    --background: 340 78% 88%; /* #F8C8DC */
     --foreground: 240 6% 10%;
     --card: 0 0% 100%;
     --card-foreground: 240 6% 10%;
@@ -24,6 +24,7 @@
     --input: 336 30% 90%;
     --ring: 332 79% 75%;
     --radius: 0.5rem;
+    --placeholder-text: 327 21% 63%; /* #B88AA7 */
   }
  
   .dark {
@@ -46,6 +47,7 @@
     --border: 260 10% 22%;
     --input: 260 10% 22%;
     --ring: 332 85% 80%;
+    --placeholder-text: 327 21% 63%; /* #B88AA7 */
   }
 }
  
