@@ -14,9 +14,9 @@ export const content = {
     },
     about: {
       title: 'Tentang Saya',
-      p1: 'Saya adalah mahasiswa Pendidikan Matematika FKIP Universitas Sriwijaya yang aktif dalam dunia pendidikan, kepenulisan, dan inovasi pembelajaran.',
-      p2: 'Berpengalaman sebagai SEA Teacher di Lampang, Thailand, saya memiliki pengalaman mengajar lintas budaya dan merancang pembelajaran bermakna berbasis konteks nyata.',
-      p3: 'Saya percaya bahwa kreativitas matematika tidak memiliki batas.',
+      p1: 'Saya merupakan mahasiswa Pendidikan Matematika FKIP Universitas Sriwijaya yang berfokus pada pengembangan pembelajaran inovatif, penulisan ilmiah, serta penguatan kualitas pendidikan berbasis riset dan refleksi pedagogis.',
+      p2: 'Saya memiliki pengalaman mengajar di berbagai lingkungan pendidikan dan terbiasa beradaptasi dengan beragam karakteristik peserta didik. Dalam setiap proses pembelajaran, saya merancang pendekatan yang kontekstual, sistematis, dan berorientasi pada pemahaman konseptual serta pengembangan kemampuan berpikir kritis.',
+      p3: 'Bagi saya, matematika bukan sekadar disiplin ilmu, melainkan sarana untuk membangun pola pikir analitis, ketelitian, kreativitas, serta keberanian intelektual dalam menghadapi permasalahan nyata.',
       achievementsTitle: 'Saya juga merupakan:',
       achievements: [
         { icon: '🏆', text: 'Juara 1 Lomba Karya Tulis Ilmiah Nasional' },
