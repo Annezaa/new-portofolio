@@ -9,10 +9,10 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { ArrowUpRight, TrendingUp } from 'lucide-react';
+import { ArrowUpRight, TrendingUp, ExternalLink } from 'lucide-react';
 
 type TeachingItem = typeof content.en.portfolio.teaching.items[0];
 
@@ -25,29 +25,29 @@ export default function Portfolio() {
   const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
   return (
-    <section id="portofolio" className="w-full py-12 md:py-24 lg:py-32 bg-background">
+    <section id="portofolio" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl font-serif font-bold tracking-tighter sm:text-5xl text-foreground">{portfolioContent.title}</h2>
         </div>
         
         <Tabs defaultValue="teaching" className="w-full">
-          <TabsList className="grid w-full grid-cols-3 max-w-lg mx-auto bg-muted rounded-full p-1">
+          <TabsList className="grid w-full grid-cols-3 max-w-lg mx-auto bg-muted rounded-full p-1 h-12">
             <TabsTrigger 
               value="teaching" 
-              className="relative rounded-full data-[state=active]:bg-card data-[state=active]:text-foreground data-[state=active]:shadow-md transition-all duration-300 py-2.5 hover:scale-105 active:scale-95 focus-visible:ring-offset-0 focus-visible:ring-2 focus-visible:ring-ring"
+              className="relative rounded-full data-[state=active]:bg-card data-[state=active]:text-foreground data-[state=active]:shadow-md transition-all duration-300 py-2.5 text-base hover:scale-105 active:scale-95 focus-visible:ring-offset-0 focus-visible:ring-2 focus-visible:ring-ring"
             >
               {portfolioContent.teaching.title}
             </TabsTrigger>
             <TabsTrigger 
               value="leadership"
-              className="relative rounded-full data-[state=active]:bg-card data-[state=active]:text-foreground data-[state=active]:shadow-md transition-all duration-300 py-2.5 hover:scale-105 active:scale-95 focus-visible:ring-offset-0 focus-visible:ring-2 focus-visible:ring-ring"
+              className="relative rounded-full data-[state=active]:bg-card data-[state=active]:text-foreground data-[state=active]:shadow-md transition-all duration-300 py-2.5 text-base hover:scale-105 active:scale-95 focus-visible:ring-offset-0 focus-visible:ring-2 focus-visible:ring-ring"
             >
               {portfolioContent.leadership.title}
             </TabsTrigger>
             <TabsTrigger 
               value="writing"
-              className="relative rounded-full data-[state=active]:bg-card data-[state=active]:text-foreground data-[state=active]:shadow-md transition-all duration-300 py-2.5 hover:scale-105 active:scale-95 focus-visible:ring-offset-0 focus-visible:ring-2 focus-visible:ring-ring"
+              className="relative rounded-full data-[state=active]:bg-card data-[state=active]:text-foreground data-[state=active]:shadow-md transition-all duration-300 py-2.5 text-base hover:scale-105 active:scale-95 focus-visible:ring-offset-0 focus-visible:ring-2 focus-visible:ring-ring"
             >
               {portfolioContent.writing.title}
             </TabsTrigger>
@@ -59,7 +59,7 @@ export default function Portfolio() {
                 <>
                   <DialogHeader>
                     <DialogTitle className="font-serif text-2xl">{selectedProject.title}</DialogTitle>
-                    <p className="text-sm text-muted-foreground pt-1">{selectedProject.institution}</p>
+                    <DialogDescription className="text-sm pt-1">{selectedProject.institution}</DialogDescription>
                   </DialogHeader>
                   <div className="py-4 text-foreground/90 text-base">
                     <p>{selectedProject.fullDescription || selectedProject.description}</p>
@@ -191,9 +191,9 @@ export default function Portfolio() {
                                   <p className="text-sm text-muted-foreground mb-2">{item.category}</p>
                                   <p className="text-sm text-foreground/80 mb-3 line-clamp-2">{item.description}</p>
                                   {item.link && (
-                                      <Link href={item.link} target="_blank" className="relative text-sm font-medium text-primary inline-flex items-center gap-1 group/link">
+                                      <Link href={item.link} target="_blank" className="relative text-sm font-medium text-primary inline-flex items-center gap-1.5 group/link">
                                         <span>{language === 'id' ? 'Baca Selengkapnya' : 'Read More'}</span>
-                                        <ArrowUpRight className="h-4 w-4 transition-transform group-hover/link:translate-x-1" />
+                                        <ExternalLink className="h-4 w-4 transition-transform group-hover/link:translate-x-1" />
                                         <span className="absolute bottom-0 left-0 h-px w-0 bg-primary transition-all duration-300 group-hover/link:w-full"></span>
                                       </Link>
                                   )}

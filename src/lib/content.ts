@@ -93,29 +93,34 @@ export const content = {
             items: [
               {
                 image: 'publication-book',
-                title: 'Antologi Esai: Bandung Sejuta Cerita',
+                title: 'Antologi Esai “Bandung Sejuta Cerita”',
                 category: 'Buku',
                 description: 'Berkontribusi sebagai penulis pertama dalam antologi esai yang mengeksplorasi narasi budaya dan sosial kota Bandung.',
-                link: '#'
+                link: 'https://referensicendekia.com/product/antologi-esai-bandung-sejuta-cerita/'
               }
             ]
           },
           {
-            name: 'Artikel Ilmiah',
+            name: 'Blog - Pengalaman PMM',
             items: [
               {
                 image: 'publication-article',
-                title: 'Trash to Cash: Strategi Ekonomi Kreatif',
-                category: 'Artikel',
-                description: 'Karya tulis ilmiah pemenang penghargaan yang mengusulkan model ekonomi sirkular berbasis komunitas.',
-                link: '#'
-              },
+                title: 'Pengalaman Pertukaran Mahasiswa – PMM Batch 4',
+                category: 'Blog',
+                description: 'Catatan perjalanan dan pembelajaran selama mengikuti program Pertukaran Mahasiswa Merdeka.',
+                link: 'https://annisakeren.blogspot.com'
+              }
+            ]
+          },
+          {
+            name: 'Blog - Perjalanan SEA Teacher',
+            items: [
                {
                 image: 'publication-article-2',
-                title: 'Etnomatematika pada Kain Songket Palembang',
-                category: 'Artikel',
-                description: 'Penelitian yang mengkaji konsep geometri dalam motif songket sebagai konteks pembelajaran matematika budaya.',
-                link: '#'
+                title: 'Perjalanan SEA Teacher – Thailand',
+                category: 'Blog',
+                description: 'Dokumentasi pengalaman mengajar dan pertukaran budaya selama program SEA Teacher di Thailand.',
+                link: 'https://sites.google.com/view/annisasseateacherjourney?usp=sharing'
               }
             ]
           }
@@ -261,29 +266,34 @@ export const content = {
             items: [
               {
                 image: 'publication-book',
-                title: 'Essay Anthology: Bandung a Million Stories',
+                title: 'Essay Anthology “Bandung A Million Stories”',
                 category: 'Book',
                 description: 'Contributed as the first author in an essay anthology exploring the cultural and social narratives of Bandung.',
-                link: '#'
+                link: 'https://referensicendekia.com/product/antologi-esai-bandung-sejuta-cerita/'
               }
             ]
           },
           {
-            name: 'Scientific Articles',
+            name: 'Blog - PMM Experience',
             items: [
               {
                 image: 'publication-article',
-                title: 'Trash to Cash: A Creative Economy Strategy',
-                category: 'Article',
-                description: 'An award-winning scientific paper proposing a community-based circular economy model.',
-                link: '#'
-              },
-              {
+                title: 'Student Exchange Experience – PMM Batch 4',
+                category: 'Blog',
+                description: 'A journey and learning log during the Merdeka Student Exchange program.',
+                link: 'https://annisakeren.blogspot.com'
+              }
+            ]
+          },
+          {
+            name: 'Blog - SEA Teacher Journey',
+            items: [
+               {
                 image: 'publication-article-2',
-                title: 'Ethnomathematics in Palembang Songket Fabric',
-                category: 'Article',
-                description: 'Research examining geometric concepts in songket motifs as a context for cultural mathematics learning.',
-                link: '#'
+                title: 'SEA Teacher Journey – Thailand',
+                category: 'Blog',
+                description: 'Documentation of teaching experiences and cultural exchange during the SEA Teacher program in Thailand.',
+                link: 'https://sites.google.com/view/annisasseateacherjourney?usp=sharing'
               }
             ]
           }
