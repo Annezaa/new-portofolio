@@ -113,7 +113,7 @@ export const content = {
     ],
     hero: {
       greeting: 'Hello, I\'m Annisa Ramadhona',
-      tagline: 'Mathematics Educator | SEA Teacher | Academic Writer | Education Innovator',
+      tagline: 'Mathematics Education Specialist | Researcher | Writer | Innovator',
     },
     about: {
       title: 'About Me',
