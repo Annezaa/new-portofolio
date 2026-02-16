@@ -12,6 +12,8 @@ export const content = {
     hero: {
       greeting: 'Halo, saya Annisa Ramadhona',
       tagline: 'Mathematics Education Specialist | Researcher | Writer | Innovator',
+      ctaPrimary: 'Lihat Portofolio',
+      ctaSecondary: 'Hubungi Saya',
     },
     about: {
       title: 'Tentang Saya',
@@ -114,11 +116,13 @@ export const content = {
     hero: {
       greeting: 'Hello, I\'m Annisa Ramadhona',
       tagline: 'Mathematics Education Specialist | Researcher | Writer | Innovator',
+      ctaPrimary: 'View Portfolio',
+      ctaSecondary: 'Contact Me',
     },
     about: {
       title: 'About Me',
-      p1: 'I am a Mathematics Education student at FKIP Sriwijaya University, active in education, writing, and learning innovation.',
-      p2: 'As a SEA Teacher in Lampang, Thailand, I have cross-cultural teaching experience and design meaningful learning based on real-world contexts.',
+      p1: 'I am a Mathematics Education student at FKIP Sriwijaya University, focusing on developing innovative learning, scientific writing, and strengthening education quality through research and pedagogical reflection.',
+      p2: 'I have teaching experience in various educational settings and am accustomed to adapting to diverse student characteristics. In every learning process, I design contextual, systematic approaches oriented towards conceptual understanding and critical thinking development.',
       achievementsTitle: 'Achievements',
       achievements: [
         { icon: '🏆', text: '20+ Writing Competitions (Essays & Scientific Papers)' },
