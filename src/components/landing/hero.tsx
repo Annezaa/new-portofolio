@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useLanguage } from '@/components/language-provider';
 import { content } from '@/lib/content';
+import TypingAnimation from '@/components/ui/typing-animation';
 
 export default function Hero() {
   const { language } = useLanguage();
@@ -17,8 +18,8 @@ export default function Hero() {
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-foreground">
               {heroContent.greeting}
             </h1>
-            <p className="text-lg text-foreground/80 md:text-xl">
-              {heroContent.tagline}
+            <p className="text-lg text-foreground/80 md:text-xl min-h-[28px] lg:min-h-[32px]">
+              <TypingAnimation text={heroContent.tagline} />
             </p>
           </div>
           <div className="flex justify-center">
