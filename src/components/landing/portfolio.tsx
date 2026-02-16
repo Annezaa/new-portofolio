@@ -1,24 +1,20 @@
 'use client';
 
-import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useLanguage } from '@/components/language-provider';
 import { content } from '@/lib/content';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
+import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { TrendingUp, ExternalLink, ChevronDown } from 'lucide-react';
+import { TrendingUp, ExternalLink } from 'lucide-react';
 import TitleTypingAnimation from '@/components/ui/title-typing-animation';
 
 export default function Portfolio() {
   const { language } = useLanguage();
   const portfolioContent = content[language].portfolio;
-  
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
 
@@ -57,35 +53,26 @@ export default function Portfolio() {
               className="w-full absolute top-0 transition-all duration-400 ease-in-out data-[state=inactive]:opacity-0 data-[state=inactive]:-translate-x-4 data-[state=active]:opacity-100 data-[state=active]:translate-x-0"
               forceMount
             >
-              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                {portfolioContent.teaching.items.slice(0, 3).map((item, index) => {
-                  const image = getImage(item.image);
-                  const isOpen = expandedIndex === index;
-                  return (
-                    <Card key={index} className="group flex flex-col overflow-hidden rounded-2xl border bg-card transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 dark:hover:shadow-primary/10 hover:-translate-y-2">
-                       <CardHeader>
-                        <CardTitle className="font-serif text-xl font-bold text-foreground leading-tight">{item.title}</CardTitle>
-                        <p className="text-sm text-muted-foreground pt-1">{item.institution}</p>
-                      </CardHeader>
-                      <CardContent className="flex-grow">
-                        <p className="text-sm text-foreground/80 line-clamp-2">{item.description}</p>
-                      </CardContent>
-                      <CardFooter className="flex-col items-start gap-4 pt-0">
-                        <div className="flex flex-wrap gap-2">
-                          {item.tags.map(tag => (
-                            <Badge key={tag} variant="secondary" className="font-normal text-xs">{tag}</Badge>
-                          ))}
-                        </div>
-                        <Button size="sm" className="rounded-full gap-1" onClick={() => setExpandedIndex(isOpen ? null : index)}>
-                          <span>{isOpen ? (language === 'id' ? 'Tutup' : 'Close') : portfolioContent.viewDetails}</span>
-                          <ChevronDown className={`h-4 w-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
-                        </Button>
-                      </CardFooter>
-                      <div 
-                        data-state={isOpen ? 'open' : 'closed'}
-                        className="overflow-hidden data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
-                      >
-                         <div className="p-6 pt-2 border-t">
+              <div className="mx-auto max-w-4xl">
+                <Accordion type="single" collapsible className="w-full space-y-4">
+                  {portfolioContent.teaching.items.map((item, index) => {
+                    const image = getImage(item.image);
+                    return (
+                      <AccordionItem value={`item-${index}`} key={index} className="bg-card border rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1">
+                        <AccordionTrigger className="p-6 text-left hover:no-underline [&[data-state=open]>svg]:text-primary">
+                          <div className="w-full space-y-2 text-left">
+                            <h3 className="font-serif text-xl font-bold text-foreground leading-tight">{item.title}</h3>
+                            <p className="text-sm text-muted-foreground">{item.institution}</p>
+                            <p className="text-sm text-foreground/80 pt-2">{item.description}</p>
+                            <div className="flex flex-wrap gap-2 pt-2">
+                              {item.tags.map(tag => (
+                                <Badge key={tag} variant="secondary" className="font-normal text-xs">{tag}</Badge>
+                              ))}
+                            </div>
+                          </div>
+                        </AccordionTrigger>
+                        <AccordionContent>
+                          <div className="px-6 pb-6 border-t pt-4">
                             {image && (
                               <div className="aspect-[4/3] overflow-hidden rounded-lg mb-4">
                                 <Image
@@ -93,17 +80,18 @@ export default function Portfolio() {
                                   alt={item.title}
                                   width={600}
                                   height={450}
-                                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                                  className="object-cover"
                                   data-ai-hint={image.imageHint}
                                 />
                               </div>
                             )}
                             <p className="text-sm text-foreground/90">{item.fullDescription}</p>
-                         </div>
-                      </div>
-                    </Card>
-                  );
-                })}
+                          </div>
+                        </AccordionContent>
+                      </AccordionItem>
+                    );
+                  })}
+                </Accordion>
               </div>
             </TabsContent>
             
