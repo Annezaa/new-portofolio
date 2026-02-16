@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-24 items-center">
           <div className="space-y-6 text-center lg:text-left">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-foreground">
+            <h1 className="text-4xl font-serif font-bold tracking-tighter sm:text-5xl md:text-6xl text-foreground">
               {heroContent.greeting}
             </h1>
             <p className="text-lg text-foreground/80 md:text-xl min-h-[28px] lg:min-h-[32px]">

@@ -5,6 +5,54 @@
       "description": "A professional portrait of Annisa Ramadhona, a mathematics educator.",
       "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmZW1hbGUlMjBlZHVjYXRvciUyMHBvcnRyYWl0fGVufDB8fHx8MTc3MjE5MzI4MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "educator portrait"
+    },
+    {
+      "id": "teaching-thailand",
+      "description": "A classroom scene in Thailand.",
+      "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjbGFzc3Jvb20lMjBpbnRlcm5hdGlvbmFsfGVufDB8fHx8MTc3MTIyOTc2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "classroom international"
+    },
+    {
+      "id": "teaching-pmri",
+      "description": "Students collaborating on a math problem.",
+      "imageUrl": "https://images.unsplash.com/photo-1758270705482-cee87ea98738?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdHVkZW50cyUyMGNvbGxhYm9yYXRpb258ZW58MHx8fHwxNzcxMjI5MTY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "students collaboration"
+    },
+    {
+      "id": "teaching-workshop",
+      "description": "A workshop for teachers.",
+      "imageUrl": "https://images.unsplash.com/photo-1766069339604-d4177198af7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dGVhY2hlciUyMHdvcmtzaG9wfGVufDB8fHx8MTc3MTIyOTc2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "teacher workshop"
+    },
+    {
+      "id": "teaching-tutoring",
+      "description": "A one-on-one tutoring session.",
+      "imageUrl": "https://images.unsplash.com/photo-1758525860435-502240649c59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0dXRvcmluZyUyMHNlc3Npb258ZW58MHx8fHwxNzcxMjEzNTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tutoring session"
+    },
+    {
+      "id": "leadership-conference",
+      "description": "Annisa speaking at a conference.",
+      "imageUrl": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb25mZXJlbmNlJTIwc3BlYWtlcnxlbnwwfHx8fDE3NzExNTg1MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "conference speaker"
+    },
+    {
+      "id": "leadership-community",
+      "description": "A community outreach event.",
+      "imageUrl": "https://images.unsplash.com/photo-1528605248644-14dd04022da1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb21tdW5pdHklMjBldmVudHxlbnwwfHx8fDE3NzExOTU2MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "community event"
+    },
+    {
+      "id": "publication-book",
+      "description": "Cover of a book.",
+      "imageUrl": "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxib29rJTIwY292ZXJ8ZW58MHx8fHwxNzcxMTk3MDk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "book cover"
+    },
+    {
+      "id": "publication-article",
+      "description": "An academic journal article.",
+      "imageUrl": "https://images.unsplash.com/photo-1585695968280-f2d03c1cafb8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxqb3VybmFsJTIwYXJ0aWNsZXxlbnwwfHx8fDE3NzEyMjk3NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "journal article"
     }
   ]
 }

@@ -9,7 +9,7 @@ export default function About() {
   return (
     <section id="tentang-saya" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
       <div className="container mx-auto px-4 md:px-6">
-        <h2 className="text-3xl font-bold tracking-tighter text-center sm:text-5xl mb-12 text-foreground">{aboutContent.title}</h2>
+        <h2 className="text-3xl font-serif font-bold tracking-tighter text-center sm:text-5xl mb-12 text-foreground">{aboutContent.title}</h2>
         <div className="grid items-start gap-12 lg:grid-cols-5">
             <div className="space-y-4 lg:col-span-3">
               <p className="text-foreground/90 md:text-xl/relaxed">
@@ -20,7 +20,7 @@ export default function About() {
               </p>
             </div>
             <div className="flex flex-col gap-6 lg:col-span-2">
-              <h3 className="text-2xl font-bold text-foreground">{aboutContent.achievementsTitle}</h3>
+              <h3 className="text-2xl font-serif font-bold text-foreground">{aboutContent.achievementsTitle}</h3>
               <ul className="space-y-4">
                 {aboutContent.achievements.map((item, index) => (
                   <li key={index} className="flex items-start gap-4">

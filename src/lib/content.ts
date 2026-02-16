@@ -29,34 +29,95 @@ export const content = {
     },
     portfolio: {
       title: 'Portofolio',
-      subtitle: 'Berikut adalah beberapa proyek dan pengalaman yang telah saya kerjakan.',
-      items: [
-        {
-          icon: 'BookOpenCheck',
-          title: 'Penelitian & Akademik',
-          description: 'Pengembangan pembelajaran berbasis PMRI dan pemodelan matematika untuk meningkatkan kemampuan berpikir kritis siswa pada materi geometri dan SPLDV.'
-        },
-        {
-          icon: 'Globe',
-          title: 'SEA Teacher Experience – Thailand',
-          description: 'Mengajar di sekolah internasional di Lampang, Thailand, dengan pendekatan pembelajaran kontekstual dan interaktif.'
-        },
-        {
-          icon: 'FileText',
-          title: 'Karya Tulis Ilmiah',
-          description: 'Paper nasional bertema Trash to Cash sebagai Strategi Menghadapi Resesi yang meraih Best Paper dan Juara 1 tingkat nasional.'
-        },
-        {
-          icon: 'Lightbulb',
-          title: 'Edu-Entrepreneur Project – MOCHI-LORR',
-          description: 'Inovasi produk mochi berbasis ekstrak labu dan bahan fungsional sebagai proyek kewirausahaan pendidikan.'
-        },
-        {
-          icon: 'Smartphone',
-          title: 'Educational App Concept',
-          description: 'Perancangan aplikasi pembelajaran matematika berbasis game dan augmented reality untuk visualisasi bangun ruang 3D.'
-        },
-      ]
+      teaching: {
+        title: '∑ Pengalaman Mengajar & Pendidikan',
+        items: [
+          {
+            image: 'teaching-thailand',
+            title: 'Praktik Mengajar Internasional (SEA Teacher)',
+            institution: 'Thewittaya School, Lampang, Thailand | 2024',
+            description: 'Merancang dan melaksanakan pembelajaran matematika interaktif untuk siswa sekolah menengah dengan fokus pada pemecahan masalah kontekstual dan komunikasi lintas budaya.',
+            tags: ['Pengajaran Internasional', 'Kurikulum Cambridge', 'Pembelajaran Berbasis Proyek']
+          },
+          {
+            image: 'teaching-pmri',
+            title: 'Asisten Dosen: Pemodelan Matematika',
+            institution: 'Universitas Sriwijaya | 2024',
+            description: 'Membantu dosen dalam mengembangkan materi, memfasilitasi diskusi kelas, dan memberikan umpan balik pada proyek pemodelan matematika mahasiswa.',
+            tags: ['Pendidikan Tinggi', 'Pemodelan Matematika', 'Penilaian']
+          },
+          {
+            image: 'teaching-workshop',
+            title: 'Tutor Sebaya: Kalkulus & Aljabar Linear',
+            institution: 'Pusat Belajar FKIP Unsri | 2023-2024',
+            description: 'Memberikan bimbingan kepada mahasiswa dalam memahami konsep-konsep dasar kalkulus dan aljabar linear melalui sesi tutorial kelompok kecil.',
+            tags: ['Bimbingan Belajar', 'Kalkulus', 'Aljabar Linear']
+          },
+          {
+            image: 'teaching-tutoring',
+            title: 'Relawan Pengajar: Gerakan Unsri Mengajar',
+            institution: 'Desa Pelakat, Musi Banyuasin | 2023',
+            description: 'Mengajar matematika dan literasi dasar bagi anak-anak di daerah terpencil, serta mengorganisir kegiatan edukatif berbasis komunitas.',
+            tags: ['Pengabdian Masyarakat', 'Pendidikan Dasar', 'Literasi']
+          }
+        ],
+        viewAll: 'Lihat Semua Pengalaman Mengajar'
+      },
+      leadership: {
+        title: 'π Kepemimpinan & Keterlibatan Komunitas',
+        items: [
+          {
+            image: 'leadership-conference',
+            title: 'Mahasiswa Berprestasi Utama',
+            organization: 'FKIP Universitas Sriwijaya | 2025',
+            description: 'Mewakili fakultas dalam kompetisi tingkat universitas, mempresentasikan gagasan tentang inovasi pendidikan melalui teknologi dan pendekatan pedagogis yang berpusat pada siswa.',
+            impact: 'Mempromosikan budaya akademik dan inovasi di kalangan mahasiswa.'
+          },
+          {
+            image: 'leadership-community',
+            title: 'Ketua Departemen Penelitian & Pengembangan',
+            organization: 'Himpunan Mahasiswa Pendidikan Matematika | 2023-2024',
+            description: 'Menginisiasi dan mengelola program-program seperti lokakarya penulisan ilmiah, kelompok studi, dan kompetisi matematika internal untuk meningkatkan kompetensi akademik anggota.',
+            impact: 'Meningkatkan partisipasi anggota dalam kegiatan ilmiah sebesar 40%.'
+          }
+        ]
+      },
+      writing: {
+        title: '□ Publikasi & Tulisan',
+        categories: [
+          {
+            name: 'Buku',
+            items: [
+              {
+                image: 'publication-book',
+                title: 'Antologi Esai: Bandung Sejuta Cerita',
+                category: 'Buku',
+                description: 'Berkontribusi sebagai penulis pertama dalam antologi esai yang mengeksplorasi narasi budaya dan sosial kota Bandung.',
+                link: '#'
+              }
+            ]
+          },
+          {
+            name: 'Artikel Ilmiah',
+            items: [
+              {
+                image: 'publication-article',
+                title: 'Trash to Cash: Strategi Ekonomi Kreatif Menghadapi Resesi',
+                category: 'Artikel',
+                description: 'Karya tulis ilmiah yang memenangkan penghargaan nasional, mengusulkan model ekonomi sirkular berbasis komunitas.',
+                link: '#'
+              },
+               {
+                image: 'publication-article',
+                title: 'Etnomatematika pada Kain Songket Palembang',
+                category: 'Artikel',
+                description: 'Penelitian yang mengkaji konsep-konsep geometri dalam motif songket sebagai konteks pembelajaran matematika budaya.',
+                link: '#'
+              }
+            ]
+          }
+        ]
+      }
     },
     skills: {
       title: 'Keahlian',
@@ -133,34 +194,95 @@ export const content = {
     },
     portfolio: {
       title: 'Portfolio',
-      subtitle: 'Here are some of the projects and experiences I have worked on.',
-      items: [
-        {
-          icon: 'BookOpenCheck',
-          title: 'Research & Academics',
-          description: 'Developing PMRI-based learning and mathematical modeling to enhance students\' critical thinking skills in geometry and systems of linear equations.'
-        },
-        {
-          icon: 'Globe',
-          title: 'SEA Teacher Experience – Thailand',
-          description: 'Teaching at an international school in Lampang, Thailand, with a contextual and interactive learning approach.'
-        },
-        {
-          icon: 'FileText',
-          title: 'Scientific Papers',
-          description: 'A national paper on "Trash to Cash" as a strategy to face recession, which won Best Paper and 1st place nationally.'
-        },
-        {
-          icon: 'Lightbulb',
-          title: 'Edu-Entrepreneur Project – MOCHI-LORR',
-          description: 'Product innovation of mochi based on pumpkin extract and functional ingredients as an educational entrepreneurship project.'
-        },
-        {
-          icon: 'Smartphone',
-          title: 'Educational App Concept',
-          description: 'Designing a game-based and augmented reality mathematics learning application for visualizing 3D shapes.'
-        },
-      ]
+      teaching: {
+        title: '∑ Teaching & Educational Experience',
+        items: [
+          {
+            image: 'teaching-thailand',
+            title: 'International Teaching Practicum (SEA Teacher)',
+            institution: 'Thewittaya School, Lampang, Thailand | 2024',
+            description: 'Designed and implemented interactive mathematics lessons for secondary students with a focus on contextual problem-solving and cross-cultural communication.',
+            tags: ['International Teaching', 'Cambridge Curriculum', 'Project-Based Learning']
+          },
+          {
+            image: 'teaching-pmri',
+            title: 'Teaching Assistant: Mathematical Modeling',
+            institution: 'Sriwijaya University | 2024',
+            description: 'Assisted the professor in developing materials, facilitating class discussions, and providing feedback on student mathematical modeling projects.',
+            tags: ['Higher Education', 'Mathematical Modeling', 'Assessment']
+          },
+          {
+            image: 'teaching-workshop',
+            title: 'Peer Tutor: Calculus & Linear Algebra',
+            institution: 'FKIP Unsri Learning Center | 2023-2024',
+            description: 'Provided guidance to fellow students in understanding fundamental concepts of calculus and linear algebra through small group tutorial sessions.',
+            tags: ['Tutoring', 'Calculus', 'Linear Algebra']
+          },
+          {
+            image: 'teaching-tutoring',
+            title: 'Volunteer Teacher: Unsri Mengajar Movement',
+            institution: 'Pelakat Village, Musi Banyuasin | 2023',
+            description: 'Taught basic mathematics and literacy to children in a remote area, and organized community-based educational activities.',
+            tags: ['Community Service', 'Primary Education', 'Literacy']
+          }
+        ],
+        viewAll: 'View All Teaching Experience'
+      },
+      leadership: {
+        title: 'π Leadership & Community Engagement',
+        items: [
+          {
+            image: 'leadership-conference',
+            title: 'Main Outstanding Student',
+            organization: 'FKIP Sriwijaya University | 2025',
+            description: 'Represented the faculty in a university-level competition, presenting ideas on educational innovation through technology and student-centered pedagogical approaches.',
+            impact: 'Promoted a culture of academic excellence and innovation among students.'
+          },
+          {
+            image: 'leadership-community',
+            title: 'Head of Research & Development Department',
+            organization: 'Mathematics Education Student Association | 2023-2024',
+            description: 'Initiated and managed programs such as scientific writing workshops, study groups, and internal math competitions to enhance members\' academic competencies.',
+            impact: 'Increased member participation in scientific activities by 40%.'
+          }
+        ]
+      },
+      writing: {
+        title: '□ Publication & Writing',
+        categories: [
+          {
+            name: 'Book',
+            items: [
+              {
+                image: 'publication-book',
+                title: 'Essay Anthology: Bandung a Million Stories',
+                category: 'Book',
+                description: 'Contributed as the first author in an essay anthology exploring the cultural and social narratives of the city of Bandung.',
+                link: '#'
+              }
+            ]
+          },
+          {
+            name: 'Scientific Articles',
+            items: [
+              {
+                image: 'publication-article',
+                title: 'Trash to Cash: A Creative Economy Strategy to Face Recession',
+                category: 'Article',
+                description: 'A national award-winning scientific paper proposing a community-based circular economy model.',
+                link: '#'
+              },
+              {
+                image: 'publication-article',
+                title: 'Ethnomathematics in Palembang Songket Fabric',
+                category: 'Article',
+                description: 'Research examining geometric concepts in songket motifs as a context for cultural mathematics learning.',
+                link: '#'
+              }
+            ]
+          }
+        ]
+      }
     },
     skills: {
       title: 'Skills',
