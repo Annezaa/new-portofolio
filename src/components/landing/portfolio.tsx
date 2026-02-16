@@ -53,39 +53,46 @@ export default function Portfolio() {
               className="w-full absolute top-0 transition-all duration-400 ease-in-out data-[state=inactive]:opacity-0 data-[state=inactive]:-translate-x-4 data-[state=active]:opacity-100 data-[state=active]:translate-x-0"
               forceMount
             >
-              <div className="mx-auto max-w-4xl">
-                <Accordion type="single" collapsible className="w-full space-y-4">
+              <div className="mx-auto max-w-5xl">
+                <Accordion type="single" collapsible className="w-full space-y-6">
                   {portfolioContent.teaching.items.map((item, index) => {
                     const image = getImage(item.image);
                     return (
                       <AccordionItem value={`item-${index}`} key={index} className="bg-card border rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1">
-                        <AccordionTrigger className="p-6 text-left hover:no-underline [&[data-state=open]>svg]:text-primary">
-                          <div className="w-full space-y-2 text-left">
-                            <h3 className="font-serif text-xl font-bold text-foreground leading-tight">{item.title}</h3>
-                            <p className="text-sm text-muted-foreground">{item.institution}</p>
-                            <p className="text-sm text-foreground/80 pt-2">{item.description}</p>
-                            <div className="flex flex-wrap gap-2 pt-2">
-                              {item.tags.map(tag => (
-                                <Badge key={tag} variant="secondary" className="font-normal text-xs">{tag}</Badge>
-                              ))}
+                        <div className="p-6">
+                          <div className="flex flex-col md:flex-row gap-6 w-full items-start">
+                            <div className="w-full md:flex-1 space-y-2 text-left">
+                              <h3 className="font-serif text-xl font-bold text-foreground leading-tight">{item.title}</h3>
+                              <p className="text-sm text-muted-foreground">{item.institution}</p>
+                              <p className="text-sm text-foreground/80 pt-2">{item.description}</p>
+                              <div className="flex flex-wrap gap-2 pt-2">
+                                {item.tags.map(tag => (
+                                  <Badge key={tag} className="font-normal text-xs bg-primary/10 border border-primary/20 text-primary-foreground hover:bg-primary/20">{tag}</Badge>
+                                ))}
+                              </div>
                             </div>
-                          </div>
-                        </AccordionTrigger>
-                        <AccordionContent>
-                          <div className="px-6 pb-6 border-t pt-4">
                             {image && (
-                              <div className="aspect-[4/3] overflow-hidden rounded-lg mb-4">
+                              <div className="w-full md:w-2/5 md:max-w-sm aspect-[4/3] overflow-hidden rounded-lg shrink-0 order-first md:order-last">
                                 <Image
                                   src={image.imageUrl}
                                   alt={item.title}
-                                  width={600}
-                                  height={450}
-                                  className="object-cover"
+                                  width={400}
+                                  height={300}
+                                  className="object-cover w-full h-full"
                                   data-ai-hint={image.imageHint}
                                 />
                               </div>
                             )}
-                            <p className="text-sm text-foreground/90">{item.fullDescription}</p>
+                          </div>
+                        </div>
+                        <AccordionTrigger className="w-full flex justify-center items-center gap-2 py-3 text-sm font-medium text-primary bg-primary/5 hover:bg-primary/10 hover:no-underline border-t !justify-center">
+                            {portfolioContent.viewDetails}
+                        </AccordionTrigger>
+                        <AccordionContent>
+                          <div className="px-6 pb-6">
+                             <div className="border-t pt-4">
+                                <p className="text-base text-foreground/90 leading-relaxed">{item.fullDescription}</p>
+                             </div>
                           </div>
                         </AccordionContent>
                       </AccordionItem>
