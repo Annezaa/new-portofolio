@@ -11,7 +11,7 @@ export const content = {
     ],
     hero: {
       greeting: 'Halo, saya Annisa Ramadhona',
-      tagline: 'Spesialis Pendidikan Matematika | Peneliti | Penulis | Inovator',
+      tagline: 'Pendidik Matematika | Peneliti Pendidikan | Penulis Akademik | Inovator Pembelajaran',
       ctaPrimary: 'Lihat Portofolio',
       ctaSecondary: 'Hubungi Saya',
     },
@@ -21,9 +21,9 @@ export const content = {
       p2: 'Saya memiliki pengalaman mengajar di berbagai lingkungan pendidikan dan terbiasa beradaptasi dengan beragam karakteristik peserta didik. Dalam setiap proses pembelajaran, saya merancang pendekatan yang kontekstual, sistematis, dan berorientasi pada pemahaman konseptual serta pengembangan kemampuan berpikir kritis.',
       achievementsTitle: 'Pencapaian Profesional',
       achievements: [
-        { icon: '🏆', text: 'Pemenang di 20+ Kompetisi Penulisan (Esai & Karya Tulis Ilmiah)' },
+        { icon: '🏆', text: 'Pemenang di 20+ Kompetisi Kepenulisan (Esai & Karya Tulis Ilmiah)' },
         { icon: '🌍', text: 'Penerima Beasiswa Program Mengajar & Pengabdian Nasional-Internasional' },
-        { icon: '📚', text: 'Penulis Utama dalam "Antologi Esai: Bandung Sejuta Cerita"' },
+        { icon: '📚', text: 'Penulis Pertama dalam "Antologi Esai: Bandung Sejuta Cerita"' },
         { icon: '🎓', text: 'Mahasiswa Berprestasi Utama FKIP UNSRI 2025' },
       ],
     },
@@ -36,15 +36,15 @@ export const content = {
             image: 'teaching-thailand',
             title: 'Praktik Mengajar Internasional (SEA Teacher)',
             institution: 'SEAMEO | LPRU Demonstration School, Thailand | Nov 2025',
-            description: 'Melaksanakan praktik mengajar, merancang pembelajaran matematika yang adaptif, dan menerapkan asesmen bagi siswa internasional.',
+            description: 'Merancang dan mengimplementasikan pembelajaran matematika yang adaptif untuk siswa internasional dengan pendekatan lintas budaya.',
             fullDescription: 'Melaksanakan praktik mengajar di LPRU Demonstration School, Thailand. Merancang dan mengimplementasikan pembelajaran matematika yang adaptif serta melakukan asesmen formatif dan sumatif untuk siswa internasional, dengan fokus pada pendekatan lintas budaya.',
-            tags: ['Pengajaran Internasional', 'Pengembangan Kurikulum', 'Lintas Budaya']
+            tags: ['Pengajaran Internasional', 'Kurikulum', 'Lintas Budaya']
           },
           {
             image: 'teaching-tutoring',
-            title: 'Pengajar & Pengembang Program (Kampus Mengajar 8)',
+            title: 'Pengajar & Pengembang Program (Kampus Mengajar)',
             institution: 'Kemdikbudristek | Daerah 3T | Agu 2024 - Des 2024',
-            description: 'Mengajar siswa SD, merancang RPP & modul ajar, dan mengintegrasikan literasi-numerasi dalam pembelajaran kontekstual.',
+            description: 'Mengajar, merancang RPP & modul ajar, serta mengintegrasikan literasi-numerasi dalam pembelajaran kontekstual di daerah 3T.',
             fullDescription: 'Mengajar siswa SD di daerah 3T, membuat Rencana Pelaksanaan Pembelajaran (RPP) dan modul ajar, serta melakukan asesmen formatif. Mengintegrasikan literasi dan numerasi dalam pembelajaran kontekstual dan bekerja sama dengan guru dalam pengembangan program belajar.',
             tags: ['Pengabdian Masyarakat', 'Literasi & Numerasi', 'Pengembangan Program']
           },
@@ -52,7 +52,7 @@ export const content = {
             image: 'teaching-pmri',
             title: 'Pelatih Literasi & Numerasi',
             institution: 'SMP Srijaya Negara, Palembang | Jul 2025',
-            description: 'Melatih siswa kelas VIII dalam memecahkan soal berbasis literasi dan numerasi untuk persiapan Asesmen Kompetensi Minimum (AKM).',
+            description: 'Melatih siswa memecahkan soal berbasis literasi-numerasi untuk persiapan Asesmen Kompetensi Minimum (AKM).',
             fullDescription: 'Melatih siswa kelas VIII dalam menjawab soal-soal berbasis literasi dan numerasi sesuai standar asesmen nasional (AKM), dengan fokus pada strategi pemecahan masalah dan berpikir kritis.',
             tags: ['Pelatihan Siswa', 'Asesmen Nasional', 'Literasi & Numerasi']
           }
@@ -65,21 +65,14 @@ export const content = {
             image: 'leadership-community',
             title: 'Ketua Pelaksana HIMMA Mengajar',
             organization: 'HIMMA FKIP UNSRI | Sep 2023',
-            description: 'Memimpin perancangan dan eksekusi program pengajaran untuk anak-anak panti asuhan, termasuk penyesuaian kurikulum dan evaluasi hasil belajar.',
+            description: 'Memimpin perancangan dan eksekusi program pengajaran untuk anak-anak panti asuhan, dari kurikulum hingga evaluasi.',
             impact: 'Meningkatkan keterlibatan dan motivasi belajar anak.'
           },
           {
             image: 'leadership-community',
-            title: 'Anggota Divisi Humas UKM UNSRI Mengajar',
-            organization: 'UKM UNSRI Mengajar | Agu 2022 - Sekarang',
-            description: 'Terlibat dalam kegiatan pengajaran di wilayah 3T dan mengorganisir acara edukatif seperti Festival Kampung Ramadhan.',
-            impact: 'Memperluas jangkauan program dan dampak sosial.'
-          },
-          {
-            image: 'leadership-conference',
-            title: 'Tim Penyusun Soal Olimpiade',
-            organization: 'Mathematic Education Fair (HIMMA FKIP UNSRI) | 2023-2024',
-            description: 'Menyusun dan menganalisis soal olimpiade matematika tingkat SMP & SMA, memastikan validitas dan tingkat kesulitan soal melalui uji coba lapangan.',
+            title: 'Tim Penyusun Soal Olimpiade Matematika',
+            organization: 'HIMMA FKIP UNSRI | 2023-2024',
+            description: 'Menyusun dan menganalisis soal olimpiade tingkat SMP & SMA, memastikan validitas dan tingkat kesulitan soal melalui uji coba.',
             impact: 'Menghasilkan set soal yang berkualitas dan kompetitif.'
           }
         ]
@@ -141,7 +134,7 @@ export const content = {
     },
     contact: {
       title: 'Mari Berkolaborasi',
-      subtitle: 'Terbuka untuk kolaborasi, proyek pendidikan, dan diskusi profesional.',
+      subtitle: 'Saya terbuka untuk kolaborasi, proyek pendidikan, dan gagasan inovatif yang membawa dampak nyata. Mari bangun sesuatu yang bermakna bersama.',
       button: 'Kirim Pesan',
       email: 'mailto:annisa031104@gmail.com',
       connectTitle: 'Terhubung dengan Saya',
@@ -183,7 +176,7 @@ export const content = {
     ],
     hero: {
       greeting: 'Hello, I\'m Annisa Ramadhona',
-      tagline: 'Mathematics Education Specialist | Researcher | Writer | Innovator',
+      tagline: 'Mathematics Educator | Educational Researcher | Academic Writer | Learning Innovator',
       ctaPrimary: 'View Portfolio',
       ctaSecondary: 'Contact Me',
     },
@@ -208,15 +201,15 @@ export const content = {
             image: 'teaching-thailand',
             title: 'International Teaching Practicum (SEA Teacher)',
             institution: 'SEAMEO | LPRU Demonstration School, Thailand | Nov 2025',
-            description: 'Conducted teaching practicum, designed adaptive math lessons, and implemented assessments for international students.',
+            description: 'Designed and implemented adaptive mathematics lessons for international students with a cross-cultural approach.',
             fullDescription: 'Conducted teaching practicum at LPRU Demonstration School, Thailand. Designed and implemented adaptive mathematics lessons, and performed formative and summative assessments for international students, focusing on a cross-cultural approach.',
-            tags: ['International Teaching', 'Curriculum Development', 'Cross-Cultural']
+            tags: ['International Teaching', 'Curriculum', 'Cross-Cultural']
           },
           {
             image: 'teaching-tutoring',
-            title: 'Teacher & Program Developer (Kampus Mengajar 8)',
+            title: 'Teacher & Program Developer (Kampus Mengajar)',
             institution: 'Kemdikbudristek | 3T Regions | Aug 2024 - Dec 2024',
-            description: 'Taught elementary students, designed lesson plans & modules, and integrated literacy-numeracy into contextual learning.',
+            description: 'Taught, designed lesson plans & modules, and integrated literacy-numeracy into contextual learning in 3T regions.',
             fullDescription: 'Taught elementary students in 3T (frontier, disadvantaged, and outermost) regions, created lesson plans and teaching modules, and performed formative assessments. Integrated literacy and numeracy into contextual learning and collaborated with teachers on program development.',
             tags: ['Community Service', 'Literacy & Numeracy', 'Program Development']
           },
@@ -224,7 +217,7 @@ export const content = {
             image: 'teaching-pmri',
             title: 'Literacy & Numeracy Coach',
             institution: 'SMP Srijaya Negara, Palembang | Jul 2025',
-            description: 'Coached 8th-grade students in solving literacy and numeracy-based problems for the National Competency Assessment (AKM).',
+            description: 'Coached students in solving literacy and numeracy-based problems for the National Competency Assessment (AKM).',
             fullDescription: 'Coached 8th-grade students in answering literacy and numeracy-based questions according to national assessment standards (AKM), focusing on problem-solving strategies and critical thinking.',
             tags: ['Student Coaching', 'National Assessment', 'Literacy & Numeracy']
           }
@@ -237,21 +230,14 @@ export const content = {
             image: 'leadership-community',
             title: 'Project Lead for HIMMA Mengajar',
             organization: 'HIMMA FKIP UNSRI | Sep 2023',
-            description: 'Led the design and execution of a teaching program for orphanage children, including curriculum adaptation and learning outcome evaluation.',
+            description: 'Led the design and execution of a teaching program for orphanage children, from curriculum to evaluation.',
             impact: 'Increased children\'s engagement and learning motivation.'
           },
           {
-            image: 'leadership-community',
-            title: 'PR Division Member at UNSRI Mengajar',
-            organization: 'UKM UNSRI Mengajar | Aug 2022 - Present',
-            description: 'Actively involved in teaching activities in remote regions and organizing educational events like the Ramadan Village Festival.',
-            impact: 'Expanded program reach and social impact.'
-          },
-          {
             image: 'leadership-conference',
-            title: 'Olympiad Problem-Making Team',
-            organization: 'Mathematic Education Fair (HIMMA FKIP UNSRI) | 2023-2024',
-            description: 'Developed and analyzed mathematics Olympiad problems for middle and high school students, ensuring validity and difficulty through field trials.',
+            title: 'Mathematics Olympiad Problem-Making Team',
+            organization: 'HIMMA FKIP UNSRI | 2023-2024',
+            description: 'Developed and analyzed mathematics Olympiad problems for middle and high school, ensuring validity and difficulty through trials.',
             impact: 'Produced a high-quality and competitive problem set.'
           }
         ]
@@ -313,7 +299,7 @@ export const content = {
     },
     contact: {
       title: 'Let\'s Collaborate',
-      subtitle: 'Open to collaborations, educational projects, and professional discussions.',
+      subtitle: 'I am open to collaborations, educational projects, and innovative ideas that make a real impact. Let\'s build something meaningful together.',
       button: 'Send Message',
       email: 'mailto:annisa031104@gmail.com',
       connectTitle: 'Connect with Me',
