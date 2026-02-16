@@ -58,39 +58,39 @@ export default function Portfolio() {
                   {portfolioContent.teaching.items.map((item, index) => {
                     const image = getImage(item.image);
                     return (
-                      <AccordionItem value={`item-${index}`} key={index} className="bg-card border rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1">
+                      <AccordionItem value={`item-${index}`} key={index} className="group/item bg-card border border-primary/20 rounded-2xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1">
                         <div className="p-6">
-                          <div className="flex flex-col md:flex-row gap-6 w-full items-start">
-                            <div className="w-full md:flex-1 space-y-2 text-left">
-                              <h3 className="font-serif text-xl font-bold text-foreground leading-tight">{item.title}</h3>
-                              <p className="text-sm text-muted-foreground">{item.institution}</p>
-                              <p className="text-sm text-foreground/80 pt-2">{item.description}</p>
-                              <div className="flex flex-wrap gap-2 pt-2">
-                                {item.tags.map(tag => (
-                                  <Badge key={tag} className="font-normal text-xs bg-primary/10 border border-primary/20 text-primary-foreground hover:bg-primary/20">{tag}</Badge>
-                                ))}
-                              </div>
-                            </div>
-                            {image && (
-                              <div className="w-full md:w-2/5 md:max-w-sm aspect-[4/3] overflow-hidden rounded-lg shrink-0 order-first md:order-last">
+                          <div className="flex flex-col md:flex-row gap-8 w-full items-center">
+                             {image && (
+                              <div className="w-full md:w-2/5 md:max-w-sm aspect-[4/3] overflow-hidden rounded-lg shrink-0">
                                 <Image
                                   src={image.imageUrl}
                                   alt={item.title}
                                   width={400}
                                   height={300}
-                                  className="object-cover w-full h-full"
+                                  className="object-cover w-full h-full transition-transform duration-300 group-hover/item:scale-105"
                                   data-ai-hint={image.imageHint}
                                 />
                               </div>
                             )}
+                            <div className="w-full md:flex-1 space-y-3 text-left">
+                              <h3 className="font-serif text-2xl font-bold text-foreground leading-tight">{item.title}</h3>
+                              <p className="text-sm font-semibold text-muted-foreground">{item.institution}</p>
+                              <p className="text-base text-foreground/80 pt-2">{item.description}</p>
+                              <div className="flex flex-wrap gap-2 pt-3">
+                                {item.tags.map(tag => (
+                                  <Badge key={tag} variant="outline" className="font-normal text-xs border-primary/30 bg-primary/5 text-primary-foreground hover:bg-primary/10">{tag}</Badge>
+                                ))}
+                              </div>
+                            </div>
                           </div>
                         </div>
-                        <AccordionTrigger className="w-full flex justify-center items-center gap-2 py-3 text-sm font-medium text-primary bg-primary/5 hover:bg-primary/10 hover:no-underline border-t !justify-center">
-                            {portfolioContent.viewDetails}
+                        <AccordionTrigger className="w-full flex justify-center items-center gap-2 p-3 text-sm font-medium text-primary-foreground bg-primary/80 hover:bg-primary hover:no-underline border-t border-primary/20 !justify-center [&[data-state=open]>svg]:text-primary-foreground">
+                            <span>{portfolioContent.viewDetails}</span>
                         </AccordionTrigger>
                         <AccordionContent>
-                          <div className="px-6 pb-6">
-                             <div className="border-t pt-4">
+                          <div className="px-6 pb-6 bg-secondary/30">
+                             <div className="border-t border-primary/20 pt-4">
                                 <p className="text-base text-foreground/90 leading-relaxed">{item.fullDescription}</p>
                              </div>
                           </div>
