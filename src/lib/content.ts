@@ -35,34 +35,26 @@ export const content = {
           {
             image: 'teaching-thailand',
             title: 'Praktik Mengajar Internasional (SEA Teacher)',
-            institution: 'Thewittaya School, Lampang, Thailand | 2024',
-            description: 'Merancang dan melaksanakan pembelajaran matematika interaktif untuk siswa sekolah menengah dengan fokus pada pemecahan masalah.',
-            fullDescription: 'Merancang dan melaksanakan pembelajaran matematika interaktif untuk siswa sekolah menengah dengan fokus pada pemecahan masalah kontekstual dan komunikasi lintas budaya. Memanfaatkan kurikulum Cambridge dan metodologi pembelajaran berbasis proyek untuk meningkatkan keterlibatan dan pemahaman siswa dalam lingkungan internasional.',
-            tags: ['Pengajaran Internasional', 'Kurikulum Cambridge', 'Pembelajaran Berbasis Proyek']
-          },
-          {
-            image: 'teaching-pmri',
-            title: 'Asisten Dosen: Pemodelan Matematika',
-            institution: 'Universitas Sriwijaya | 2024',
-            description: 'Membantu mengembangkan materi, memfasilitasi diskusi, dan memberikan umpan balik pada proyek pemodelan matematika mahasiswa.',
-            fullDescription: 'Membantu dosen dalam mengembangkan materi, memfasilitasi diskusi kelas, dan memberikan umpan balik yang membangun pada proyek pemodelan matematika mahasiswa. Peran ini melibatkan pendalaman konsep pemodelan matematika dan strategi penilaian pendidikan tinggi.',
-            tags: ['Pendidikan Tinggi', 'Pemodelan Matematika', 'Penilaian']
-          },
-          {
-            image: 'teaching-workshop',
-            title: 'Tutor Sebaya: Kalkulus & Aljabar Linear',
-            institution: 'Pusat Belajar FKIP Unsri | 2023-2024',
-            description: 'Memberikan bimbingan kepada mahasiswa dalam memahami konsep-konsep dasar kalkulus dan aljabar linear.',
-            fullDescription: 'Memberikan bimbingan kepada sesama mahasiswa dalam memahami konsep-konsep dasar kalkulus dan aljabar linear melalui sesi tutorial kelompok kecil, mendorong lingkungan belajar yang kolaboratif.',
-            tags: ['Bimbingan Belajar', 'Kalkulus', 'Aljabar Linear']
+            institution: 'SEAMEO | LPRU Demonstration School, Thailand | Nov 2025',
+            description: 'Melaksanakan praktik mengajar, merancang pembelajaran matematika yang adaptif, dan menerapkan asesmen bagi siswa internasional.',
+            fullDescription: 'Melaksanakan praktik mengajar di LPRU Demonstration School, Thailand. Merancang dan mengimplementasikan pembelajaran matematika yang adaptif serta melakukan asesmen formatif dan sumatif untuk siswa internasional, dengan fokus pada pendekatan lintas budaya.',
+            tags: ['Pengajaran Internasional', 'Pengembangan Kurikulum', 'Lintas Budaya']
           },
           {
             image: 'teaching-tutoring',
-            title: 'Relawan Pengajar: Gerakan Unsri Mengajar',
-            institution: 'Desa Pelakat, Musi Banyuasin | 2023',
-            description: 'Mengajar matematika dan literasi dasar bagi anak-anak di daerah terpencil, serta mengorganisir kegiatan edukatif berbasis komunitas.',
-            fullDescription: 'Mengajar matematika dan literasi dasar bagi anak-anak di daerah terpencil, serta mengorganisir kegiatan edukatif berbasis komunitas untuk meningkatkan akses dan kualitas pendidikan.',
-            tags: ['Pengabdian Masyarakat', 'Pendidikan Dasar', 'Literasi']
+            title: 'Pengajar & Pengembang Program (Kampus Mengajar 8)',
+            institution: 'Kemdikbudristek | Daerah 3T | Agu 2024 - Des 2024',
+            description: 'Mengajar siswa SD, merancang RPP & modul ajar, dan mengintegrasikan literasi-numerasi dalam pembelajaran kontekstual.',
+            fullDescription: 'Mengajar siswa SD di daerah 3T, membuat Rencana Pelaksanaan Pembelajaran (RPP) dan modul ajar, serta melakukan asesmen formatif. Mengintegrasikan literasi dan numerasi dalam pembelajaran kontekstual dan bekerja sama dengan guru dalam pengembangan program belajar.',
+            tags: ['Pengabdian Masyarakat', 'Literasi & Numerasi', 'Pengembangan Program']
+          },
+          {
+            image: 'teaching-pmri',
+            title: 'Pelatih Literasi & Numerasi',
+            institution: 'SMP Srijaya Negara, Palembang | Jul 2025',
+            description: 'Melatih siswa kelas VIII dalam memecahkan soal berbasis literasi dan numerasi untuk persiapan Asesmen Kompetensi Minimum (AKM).',
+            fullDescription: 'Melatih siswa kelas VIII dalam menjawab soal-soal berbasis literasi dan numerasi sesuai standar asesmen nasional (AKM), dengan fokus pada strategi pemecahan masalah dan berpikir kritis.',
+            tags: ['Pelatihan Siswa', 'Asesmen Nasional', 'Literasi & Numerasi']
           }
         ]
       },
@@ -70,18 +62,25 @@ export const content = {
         title: 'π Kepemimpinan',
         items: [
           {
-            image: 'leadership-conference',
-            title: 'Mahasiswa Berprestasi Utama',
-            organization: 'FKIP Universitas Sriwijaya | 2025',
-            description: 'Mewakili fakultas dalam kompetisi tingkat universitas, mempresentasikan gagasan tentang inovasi pendidikan melalui teknologi dan pendekatan pedagogis yang berpusat pada siswa.',
-            impact: 'Mempromosikan budaya akademik dan inovasi di kalangan mahasiswa.'
+            image: 'leadership-community',
+            title: 'Ketua Pelaksana HIMMA Mengajar',
+            organization: 'HIMMA FKIP UNSRI | Sep 2023',
+            description: 'Memimpin perancangan dan eksekusi program pengajaran untuk anak-anak panti asuhan, termasuk penyesuaian kurikulum dan evaluasi hasil belajar.',
+            impact: 'Meningkatkan keterlibatan dan motivasi belajar anak.'
           },
           {
             image: 'leadership-community',
-            title: 'Ketua Departemen Penelitian & Pengembangan',
-            organization: 'Himpunan Mahasiswa Pendidikan Matematika | 2023-2024',
-            description: 'Menginisiasi dan mengelola program-program seperti lokakarya penulisan ilmiah, kelompok studi, dan kompetisi matematika internal untuk meningkatkan kompetensi akademik anggota.',
-            impact: 'Meningkatkan partisipasi anggota dalam kegiatan ilmiah sebesar 40%.'
+            title: 'Anggota Divisi Humas UKM UNSRI Mengajar',
+            organization: 'UKM UNSRI Mengajar | Agu 2022 - Sekarang',
+            description: 'Terlibat dalam kegiatan pengajaran di wilayah 3T dan mengorganisir acara edukatif seperti Festival Kampung Ramadhan.',
+            impact: 'Memperluas jangkauan program dan dampak sosial.'
+          },
+          {
+            image: 'leadership-conference',
+            title: 'Tim Penyusun Soal Olimpiade',
+            organization: 'Mathematic Education Fair (HIMMA FKIP UNSRI) | 2023-2024',
+            description: 'Menyusun dan menganalisis soal olimpiade matematika tingkat SMP & SMA, memastikan validitas dan tingkat kesulitan soal melalui uji coba lapangan.',
+            impact: 'Menghasilkan set soal yang berkualitas dan kompetitif.'
           }
         ]
       },
@@ -208,34 +207,26 @@ export const content = {
           {
             image: 'teaching-thailand',
             title: 'International Teaching Practicum (SEA Teacher)',
-            institution: 'Thewittaya School, Lampang, Thailand | 2024',
-            description: 'Designed and implemented interactive mathematics lessons for secondary students focusing on contextual problem-solving.',
-            fullDescription: 'Designed and implemented interactive mathematics lessons for secondary students with a focus on contextual problem-solving and cross-cultural communication. Utilized the Cambridge curriculum and project-based learning methodologies to enhance student engagement and understanding in an international setting.',
-            tags: ['International Teaching', 'Cambridge Curriculum', 'Project-Based Learning']
-          },
-          {
-            image: 'teaching-pmri',
-            title: 'Teaching Assistant: Mathematical Modeling',
-            institution: 'Sriwijaya University | 2024',
-            description: 'Assisted in developing materials, facilitating discussions, and providing feedback on student modeling projects.',
-            fullDescription: 'Assisted the professor in developing materials, facilitating class discussions, and providing constructive feedback on student mathematical modeling projects. This role involved a deep dive into mathematical modeling concepts and higher education assessment strategies.',
-            tags: ['Higher Education', 'Mathematical Modeling', 'Assessment']
-          },
-          {
-            image: 'teaching-workshop',
-            title: 'Peer Tutor: Calculus & Linear Algebra',
-            institution: 'FKIP Unsri Learning Center | 2023-2024',
-            description: 'Provided guidance to fellow students in understanding fundamental concepts of calculus and linear algebra.',
-            fullDescription: 'Provided guidance to fellow students in understanding fundamental concepts of calculus and linear algebra through small group tutorial sessions, fostering a collaborative learning environment.',
-            tags: ['Tutoring', 'Calculus', 'Linear Algebra']
+            institution: 'SEAMEO | LPRU Demonstration School, Thailand | Nov 2025',
+            description: 'Conducted teaching practicum, designed adaptive math lessons, and implemented assessments for international students.',
+            fullDescription: 'Conducted teaching practicum at LPRU Demonstration School, Thailand. Designed and implemented adaptive mathematics lessons, and performed formative and summative assessments for international students, focusing on a cross-cultural approach.',
+            tags: ['International Teaching', 'Curriculum Development', 'Cross-Cultural']
           },
           {
             image: 'teaching-tutoring',
-            title: 'Volunteer Teacher: Unsri Mengajar Movement',
-            institution: 'Pelakat Village, Musi Banyuasin | 2023',
-            description: 'Taught basic mathematics and literacy to children in a remote area, and organized community-based educational activities.',
-            fullDescription: 'Taught basic mathematics and literacy to children in a remote area, and organized community-based educational activities to improve educational access and quality.',
-            tags: ['Community Service', 'Primary Education', 'Literacy']
+            title: 'Teacher & Program Developer (Kampus Mengajar 8)',
+            institution: 'Kemdikbudristek | 3T Regions | Aug 2024 - Dec 2024',
+            description: 'Taught elementary students, designed lesson plans & modules, and integrated literacy-numeracy into contextual learning.',
+            fullDescription: 'Taught elementary students in 3T (frontier, disadvantaged, and outermost) regions, created lesson plans and teaching modules, and performed formative assessments. Integrated literacy and numeracy into contextual learning and collaborated with teachers on program development.',
+            tags: ['Community Service', 'Literacy & Numeracy', 'Program Development']
+          },
+          {
+            image: 'teaching-pmri',
+            title: 'Literacy & Numeracy Coach',
+            institution: 'SMP Srijaya Negara, Palembang | Jul 2025',
+            description: 'Coached 8th-grade students in solving literacy and numeracy-based problems for the National Competency Assessment (AKM).',
+            fullDescription: 'Coached 8th-grade students in answering literacy and numeracy-based questions according to national assessment standards (AKM), focusing on problem-solving strategies and critical thinking.',
+            tags: ['Student Coaching', 'National Assessment', 'Literacy & Numeracy']
           }
         ]
       },
@@ -243,18 +234,25 @@ export const content = {
         title: 'π Leadership',
         items: [
           {
-            image: 'leadership-conference',
-            title: 'Main Outstanding Student',
-            organization: 'FKIP Sriwijaya University | 2025',
-            description: 'Represented the faculty in a university-level competition, presenting ideas on educational innovation through technology and student-centered pedagogical approaches.',
-            impact: 'Promoted a culture of academic excellence and innovation among students.'
+            image: 'leadership-community',
+            title: 'Project Lead for HIMMA Mengajar',
+            organization: 'HIMMA FKIP UNSRI | Sep 2023',
+            description: 'Led the design and execution of a teaching program for orphanage children, including curriculum adaptation and learning outcome evaluation.',
+            impact: 'Increased children\'s engagement and learning motivation.'
           },
           {
             image: 'leadership-community',
-            title: 'Head of Research & Development Department',
-            organization: 'Mathematics Education Student Association | 2023-2024',
-            description: 'Initiated and managed programs such as scientific writing workshops, study groups, and internal math competitions to enhance members\' academic competencies.',
-            impact: 'Increased member participation in scientific activities by 40%.'
+            title: 'PR Division Member at UNSRI Mengajar',
+            organization: 'UKM UNSRI Mengajar | Aug 2022 - Present',
+            description: 'Actively involved in teaching activities in remote regions and organizing educational events like the Ramadan Village Festival.',
+            impact: 'Expanded program reach and social impact.'
+          },
+          {
+            image: 'leadership-conference',
+            title: 'Olympiad Problem-Making Team',
+            organization: 'Mathematic Education Fair (HIMMA FKIP UNSRI) | 2023-2024',
+            description: 'Developed and analyzed mathematics Olympiad problems for middle and high school students, ensuring validity and difficulty through field trials.',
+            impact: 'Produced a high-quality and competitive problem set.'
           }
         ]
       },
